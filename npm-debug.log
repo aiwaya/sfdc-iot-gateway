@@ -1,0 +1,118 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/work/WebstormProjects/sfdciotgateway',
+5 verbose install   [ 'express',
+5 verbose install     'static-favicon',
+5 verbose install     'morgan',
+5 verbose install     'cookie-parser',
+5 verbose install     'body-parser',
+5 verbose install     'debug',
+5 verbose install     'ejs',
+5 verbose install     'pg',
+5 verbose install     'pusher',
+5 verbose install     'basic-auth',
+5 verbose install     'sendgrid' ] ]
+6 info preinstall application-name@0.0.1
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping body-parser@~1.0.0 /Users/work/WebstormProjects/sfdciotgateway
+9 verbose already installed skipping debug@~0.7.4 /Users/work/WebstormProjects/sfdciotgateway
+10 verbose already installed skipping ejs@~1.0.0 /Users/work/WebstormProjects/sfdciotgateway
+11 verbose already installed skipping pg@2.x /Users/work/WebstormProjects/sfdciotgateway
+12 verbose cache add [ 'pusher@2.x', null ]
+13 verbose cache add name=undefined spec="pusher@2.x" args=["pusher@2.x",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'pusher@2.x',
+14 verbose parsed url   path: 'pusher@2.x',
+14 verbose parsed url   href: 'pusher@2.x' }
+15 verbose already installed skipping basic-auth@1.0.0 /Users/work/WebstormProjects/sfdciotgateway
+16 verbose already installed skipping sendgrid@1.x /Users/work/WebstormProjects/sfdciotgateway
+17 verbose already installed skipping express@~4.0.0 /Users/work/WebstormProjects/sfdciotgateway
+18 verbose cache add name="pusher" spec="2.x" args=["pusher","2.x"]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: '2.x',
+19 verbose parsed url   path: '2.x',
+19 verbose parsed url   href: '2.x' }
+20 verbose addNamed [ 'pusher', '2.x' ]
+21 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+22 verbose already installed skipping static-favicon@~1.0.0 /Users/work/WebstormProjects/sfdciotgateway
+23 silly lockFile 91f65221-pusher-2-x pusher@2.x
+24 verbose lock pusher@2.x /Users/work/.npm/91f65221-pusher-2-x.lock
+25 silly addNameRange { name: 'pusher', range: '>=2.0.0-0 <3.0.0-0', hasData: false }
+26 verbose request where is /pusher
+27 verbose request registry https://registry.npmjs.org/
+28 verbose request id 21d1a50acdb576be
+29 verbose url raw /pusher
+30 verbose url resolving [ 'https://registry.npmjs.org/', './pusher' ]
+31 verbose url resolved https://registry.npmjs.org/pusher
+32 verbose request where is https://registry.npmjs.org/pusher
+33 info trying registry request attempt 1 at 10:31:58
+34 verbose etag "3LW73DDUOL2L6U8UWFSEUYKCK"
+35 http GET https://registry.npmjs.org/pusher
+36 verbose already installed skipping morgan@~1.0.0 /Users/work/WebstormProjects/sfdciotgateway
+37 verbose already installed skipping cookie-parser@~1.0.1 /Users/work/WebstormProjects/sfdciotgateway
+38 http 304 https://registry.npmjs.org/pusher
+39 silly registry.get cb [ 304,
+39 silly registry.get   { date: 'Fri, 12 Dec 2014 01:31:58 GMT',
+39 silly registry.get     server: 'Apache',
+39 silly registry.get     via: '1.1 varnish',
+39 silly registry.get     'last-modified': 'Fri, 12 Dec 2014 01:31:58 GMT',
+39 silly registry.get     'cache-control': 'max-age=60',
+39 silly registry.get     etag: '"3LW73DDUOL2L6U8UWFSEUYKCK"',
+39 silly registry.get     age: '0',
+39 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+39 silly registry.get     'x-cache': 'HIT',
+39 silly registry.get     'x-cache-hits': '1',
+39 silly registry.get     'x-timer': 'S1418347918.689318,VS0,VE119',
+39 silly registry.get     vary: 'Accept',
+39 silly registry.get     'content-length': '0',
+39 silly registry.get     'keep-alive': 'timeout=10, max=50',
+39 silly registry.get     connection: 'Keep-Alive' } ]
+40 verbose etag https://registry.npmjs.org/pusher from cache
+41 silly addNameRange number 2 { name: 'pusher', range: '>=2.0.0-0 <3.0.0-0', hasData: true }
+42 silly addNameRange versions [ 'pusher',
+42 silly addNameRange   [ '0.0.1',
+42 silly addNameRange     '0.0.2',
+42 silly addNameRange     '0.0.3',
+42 silly addNameRange     '0.0.4',
+42 silly addNameRange     '0.1.0',
+42 silly addNameRange     '0.1.1',
+42 silly addNameRange     '0.1.2',
+42 silly addNameRange     '0.1.3',
+42 silly addNameRange     '1.0.0',
+42 silly addNameRange     '1.0.1',
+42 silly addNameRange     '1.0.2' ] ]
+43 silly lockFile 91f65221-pusher-2-x pusher@2.x
+44 silly lockFile 91f65221-pusher-2-x pusher@2.x
+45 error notarget No compatible version found: pusher@'>=2.0.0-0 <3.0.0-0'
+45 error notarget Valid install targets:
+45 error notarget ["0.0.1","0.0.2","0.0.3","0.0.4","0.1.0","0.1.1","0.1.2","0.1.3","1.0.0","1.0.1","1.0.2"]
+45 error notarget
+45 error notarget This is most likely not a problem with npm itself.
+45 error notarget In most cases you or one of your dependencies are requesting
+45 error notarget a package version that doesn't exist.
+46 error System Darwin 11.4.2
+47 error command "node" "/usr/local/bin/npm" "install"
+48 error cwd /Users/work/WebstormProjects/sfdciotgateway
+49 error node -v v0.10.33
+50 error npm -v 1.4.28
+51 error code ETARGET
+52 verbose exit [ 1, true ]

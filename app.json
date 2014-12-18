@@ -1,0 +1,19 @@
+{
+  "name": "SFDC IoT Gateway",
+  "description": " Node.js app using Express 4",
+  "repository": "https://github.com/aiwaya/a",
+  "scripts": {
+    "postdeploy": "node schema.js"
+  },
+  "env": {
+    "YOUR_EMAIL": "yourname@salesforce.com",
+    "SFDC_USERNAME": "username",
+    "SFDC_PASSWORD": "password"
+  },
+  "addons": [
+    "pusher:sandbox",
+    "sendgrid:starter",
+    "pgstudio",
+    "heroku-postgresql:hobby-dev"
+  ]
+}
