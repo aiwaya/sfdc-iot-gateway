@@ -28,7 +28,7 @@ router.post('/series', function (req, res) {
     var lng = req.body.longitude;
 
 
-    if (process.env.SFDC_USERNAME == null && process.env.SFDC_PASSWORD == null) {
+    if (process.env.SFDC_USERNAME && process.env.SFDC_PASSWORD) {
         console.log("SEND SFDC");
         console.log(process.env.SFDC_USERNAME);
 
