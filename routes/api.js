@@ -30,6 +30,8 @@ router.post('/series', function (req, res) {
 
     if (process.env.SFDC_USERNAME == null && process.env.SFDC_PASSWORD == null) {
         console.log("SEND SFDC");
+        console.log(process.env.SFDC_USERNAME);
+
         var conn = new jsforce.Connection();
         conn.login('sfdciotgateway@demo.jp', 'abcd1234', function (err, res) {
             if (err) {
