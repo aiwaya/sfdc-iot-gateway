@@ -15,7 +15,7 @@ var pusher = new Pusher({
 
 router.post('/series', function (req, res) {
     console.log('post:/api/series');
-    /*
+   /*
     if (process.env.CLIENT_ACCESS_TOKEN != req.body.token) {
         res.status(401).end();
     }
@@ -29,6 +29,7 @@ router.post('/series', function (req, res) {
 
 
     if (process.env.SFDC_USERNAME == null && process.env.SFDC_PASSWORD == null) {
+        console.log("SEND SFDC");
         var conn = new jsforce.Connection();
         conn.login('sfdciotgateway@demo.jp', 'abcd1234', function (err, res) {
             if (err) {
@@ -42,6 +43,8 @@ router.post('/series', function (req, res) {
                 console.log("Created record id : " + ret.id);
             });
         });
+    } else {
+        console.log("NOT SEND SFDC");
     }
 
     pg.connect(db_config, function (err, client, done) {

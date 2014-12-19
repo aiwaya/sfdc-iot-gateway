@@ -32,6 +32,13 @@ module.exports = {
             end = year + '-' + month + '-01';
         }
         return [start, end, uid];
+    },
+
+    is_sfdc_enabled: function() {
+        if(process.env.SFDC_USERNAME == null && process.env.SFDC_PASSWORD == null) {
+            return false;
+        }
+        return true;
     }
 };
 
