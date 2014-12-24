@@ -29,11 +29,9 @@ router.post('/series', function (req, res) {
 
 
     if (process.env.SFDC_USERNAME && process.env.SFDC_PASSWORD) {
-        console.log("SEND SFDC");
-        console.log(process.env.SFDC_USERNAME);
-
         var conn = new jsforce.Connection();
-        conn.login('sfdciotgateway@demo.jp', 'abcd1234', function (err, res) {
+//        conn.login('sfdciotgateway@demo.jp', 'abcd1234', function (err, res) {
+        conn.login(process.env.SFDC_USERNAME, process.env.SFDC_PASSWORD, function (err, res) {
             if (err) {
                 return console.error(err);
             }
@@ -45,8 +43,6 @@ router.post('/series', function (req, res) {
                 console.log("Created record id : " + ret.id);
             });
         });
-    } else {
-        console.log("NOT SEND SFDC");
     }
 
     pg.connect(db_config, function (err, client, done) {

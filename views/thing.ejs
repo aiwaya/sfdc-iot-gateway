@@ -12,15 +12,25 @@
         var pusher = new Pusher('<%= pusher_key %>');
         var channel = pusher.subscribe('<%= uid %>');
         channel.bind('led', function (data) {
-            alert(data.value); // on or off
+            $('#led').attr('src', "/images/led" + data.value + ".png");
         });
     </script>
     <!-- Pusher -->
 
+    <link rel="stylesheet" href="/css/circular-slider.min.css" />
+    <script src="/js/circular-slider.min.js"></script>
+
+
+
+
+
+
 </head>
 
 <body>
-asdsad
+<img id="led" src="/images/ledoff.png">
+<div id="slider"></div>
+
 
 </body>
 <script>
@@ -29,7 +39,7 @@ asdsad
     }
 
     function get_data() {
-        return "1.1";
+        return halfCircularSlider.getValue();
     }
 
     function success(pos) {
@@ -56,6 +66,24 @@ asdsad
     });
 
     $(function () {
+
+        halfCircularSlider = $('#slider').CircularSlider({
+            min : 0,
+            max: 50,
+            value : 23,
+            labelSuffix: "%",
+            shape: "Half Circle",
+            slide : function(value) {
+                if (value < 50) {
+                    //ui.next().css({'background' : 'rgba(250, 81, 81,' + ((100 - value) / 100) + ')'});
+                } else {
+                //    ui.next().css({'background' : 'rgba(87, 250, 87,' + (value / 100) + ')'});
+                }
+            }
+        });
+    });
+
+    $(function () {
         setInterval(function () {
             $.ajax({
                 type: "POST",
@@ -68,7 +96,7 @@ asdsad
                     "longitude": lon
                 },
                 success: function(j_data){
-                    console.log("GET: /api/series success");
+                    console.log("GET: /api/series success " +get_data());
                 }
             });
 

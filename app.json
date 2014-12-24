@@ -6,9 +6,12 @@
     "postdeploy": "node schema.js"
   },
   "env": {
-    "YOUR_EMAIL": "yourname@salesforce.com",
-    "SFDC_USERNAME": "username",
-    "SFDC_PASSWORD": "password"
+    "YOUR_EMAIL": "",
+    "PUSHER_APPID": "",
+    "PUSHER_KEY": "",
+    "PUSHER_SECRET": "",
+    "SFDC_USERNAME": "",
+    "SFDC_PASSWORD": ""
   },
   "addons": [
     "pusher:sandbox",
