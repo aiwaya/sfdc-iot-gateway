@@ -6,12 +6,16 @@ router.get('/', function (req, res) {
     res.render('map', {});
 });
 
-router.get('/cockpit', function (req, res) {
-    res.render('cockpit', { pusher_key: process.env.PUSHER_KEY, uid: req.query.uid });
+router.get('/cockpit/:uid', function (req, res) {
+    res.render('cockpit', { pusher_key: process.env.PUSHER_KEY, uid: req.param("uid") });
 });
 
 
 module.exports = router;
+
+
+
+
 
 
 
