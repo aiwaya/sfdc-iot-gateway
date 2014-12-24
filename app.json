@@ -6,12 +6,7 @@
     "postdeploy": "node schema.js"
   },
   "env": {
-    "YOUR_EMAIL": "",
-    "PUSHER_APPID": "",
-    "PUSHER_KEY": "",
-    "PUSHER_SECRET": "",
-    "SFDC_USERNAME": "",
-    "SFDC_PASSWORD": ""
+    "YOUR_EMAIL": ""
   },
   "addons": [
     "pusher:sandbox",
