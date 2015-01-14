@@ -112,7 +112,7 @@
             var position = new ns.LatLng(info.latitude, info.longitude),
                     marker = new ns.Marker({position: position, map: map, title: "aki"});
 
-            var contentString="<dl id='infowin1'><dt>" + info.uid + "</dt><dd>詳細は<a href='/cockpit/" + info.uid + "'>こちら</a></dd></dl>";
+            var contentString="<dl id='infowin1'><dt>" + info.uid + "</dt><dd><script>sr.context.user.fullName</script><a href='/cockpit/" + info.uid + "'>こちら</a></dd></dl>";
             var infowindow=new google.maps.InfoWindow({
                 content: contentString
             });
