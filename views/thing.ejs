@@ -28,8 +28,10 @@
 </head>
 
 <body>
-<img id="led" src="/images/ledoff.png">
+<img id="led" style="width: 15%; height: 15%" src="/images/ledoff.png">
 <div id="slider"></div>
+
+
 
 
 </body>
@@ -71,7 +73,7 @@
             min : 0,
             max: 50,
             value : 23,
-            labelSuffix: "%",
+            labelSuffix: "℃",
             shape: "Half Circle",
             slide : function(value) {
                 if (value < 50) {

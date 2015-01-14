@@ -6,7 +6,9 @@
     "postdeploy": "node schema.js"
   },
   "env": {
-    "YOUR_EMAIL": ""
+    "YOUR_EMAIL": "",
+    "LONGITUDE": "139.739",
+    "LATITUDE": "35.665595"
   },
   "addons": [
     "pusher:sandbox",

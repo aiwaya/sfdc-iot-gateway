@@ -1,5 +1,3 @@
-
-
 var express = require('express');
 
 var path = require('path');
@@ -29,18 +27,18 @@ app.use('/api', api);
 app.use('/thing', thing);
 
 /*
-app.use(function (req, res, next) {
-    var user = auth(req);
-    if (user === undefined || user['name'] !== process.env.BASIC_USERNAME || user['pass'] !== process.env.BASIC_PASSWORD) {
-        res.statusCode = 401;
-        res.setHeader('WWW-Authenticate', 'Basic realm="MyRealmName"');
-        res.end('Unauthorized');
+ app.use(function (req, res, next) {
+ var user = auth(req);
+ if (user === undefined || user['name'] !== process.env.BASIC_USERNAME || user['pass'] !== process.env.BASIC_PASSWORD) {
+ res.statusCode = 401;
+ res.setHeader('WWW-Authenticate', 'Basic realm="MyRealmName"');
+ res.end('Unauthorized');
 
-    } else {
-        next();
-    }
-});
-*/
+ } else {
+ next();
+ }
+ });
+ */
 
 app.use('/', routes);
 
@@ -55,6 +53,7 @@ app.use(function (req, res, next) {
 app.use(function (err, req, res, next) {
     console.log("Program Error: " + req.originalUrl);
     console.log(err);
+
     var email = new sendgrid.Email({
             to: process.env.YOUR_EMAIL,
             from: process.env.YOUR_EMAIL,
@@ -68,6 +67,7 @@ app.use(function (err, req, res, next) {
             return console.error(err);
         }
     })
+
 
     res.status(err.status || 500);
     res.render('error', {
