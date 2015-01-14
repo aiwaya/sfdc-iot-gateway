@@ -69,7 +69,7 @@
       <file leaf-file-name="map.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/map.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="131" selection-start="4215" selection-end="4215" vertical-scroll-proportion="0.5986622">
+            <state line="116" column="78" selection-start="4162" selection-end="4162" vertical-scroll-proportion="0.5986622">
               <folding />
             </state>
           </provider>
@@ -468,7 +468,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/map.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="131" selection-start="4215" selection-end="4215" vertical-scroll-proportion="0.5986622">
+        <state line="116" column="78" selection-start="4162" selection-end="4162" vertical-scroll-proportion="0.5986622">
           <folding />
         </state>
       </provider>
