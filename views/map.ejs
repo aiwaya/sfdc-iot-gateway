@@ -76,16 +76,15 @@
                 parentUrl = null;
 
         if (isInIframe) {
-            //parentUrl = document.referrer;
-            parentUrl = document.domain;
+            parentUrl = document.referrer;
         }
 
         return parentUrl;
     }
 
     function aki() {
-        var d = window.parent.domain;
-        alert(d);
+
+        alert(document.referrer);
     }
 
     function goToDetailPage() {
