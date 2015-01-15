@@ -1,13 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* Called from Heroku App */
 router.get('/', function (req, res) {
-    res.render('map', {lat: process.env.LATITUDE, lon: process.env.LONGITUDE});
+    res.render('map', {lat: process.env.LATITUDE, lon: process.env.LONGITUDE, heroku_page: true});
 });
 
+/* Called from Salesforce */
 router.post('/', function (req, res) {
-    res.render('map', {lat: process.env.LATITUDE, lon: process.env.LONGITUDE});
+    res.render('map', {lat: process.env.LATITUDE, lon: process.env.LONGITUDE, heroku_page: false});
 });
 
 router.get('/cockpit/:uid', function (req, res) {
