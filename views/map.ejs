@@ -70,6 +70,11 @@
         </div>
     </div>
 </div>
+<script>
+    function goToDetailPage() {
+        window.location.href = "https://ap.salesforce.com/a001000000zjdIT";
+    }
+</script>
 
 <script>
     jQuery(function ($) {
@@ -110,10 +115,6 @@
 
 
 
-        function goToDetailPage() {
-            window.location.href = "https://ap.salesforce.com/a001000000zjdIT&output=embed";
-        }
-
         function placeMarker(id, info) {
 
             var position = new ns.LatLng(info.latitude, info.longitude),
@@ -126,7 +127,7 @@
 
 
 
-            var contentString="<dl id='infowin1'><dt>" + info.uid + "</dt><dd><a href="javascript:goToDetailPage()">こちら</a></dd></dl>";
+            var contentString="<dl id='infowin1'><dt>" + info.uid + "</dt><dd><a href='javascript:goToDetailPage()'>こちら</a></dd></dl>";
 
 
 
