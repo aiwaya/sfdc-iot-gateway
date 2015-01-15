@@ -76,7 +76,8 @@
                 parentUrl = null;
 
         if (isInIframe) {
-            parentUrl = document.referrer;
+            //parentUrl = document.referrer;
+            parentUrl = document.domain;
         }
 
         return parentUrl;
