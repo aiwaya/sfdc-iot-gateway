@@ -71,7 +71,21 @@
     </div>
 </div>
 <script>
+    function getParentUrl() {
+        var isInIframe = (parent !== window),
+                parentUrl = null;
+
+        if (isInIframe) {
+            parentUrl = document.referrer;
+        }
+
+        return parentUrl;
+    }
+
     function goToDetailPage() {
+        alert(window.parent.location);
+        alert(getParentUrl());
+
         window.parent.location.href = "/a001000000zjdIT";
     }
 </script>
