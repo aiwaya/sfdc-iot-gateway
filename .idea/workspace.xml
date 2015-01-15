@@ -18,7 +18,7 @@
     <file path="/app.json" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411214319" ignored="false" />
     <file path="/index.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421216724912" ignored="false" />
     <file path="/cockpit.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419402320248" ignored="false" />
-    <file path="/map.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421283158352" ignored="false" />
+    <file path="/map.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421283442835" ignored="false" />
     <file path="/app.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411016953" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +69,7 @@
       <file leaf-file-name="map.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/map.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="35" selection-start="2793" selection-end="2793" vertical-scroll-proportion="0.13641246">
+            <state line="74" column="21" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.41245973">
               <folding />
             </state>
           </provider>
@@ -468,7 +468,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/map.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="35" selection-start="2793" selection-end="2793" vertical-scroll-proportion="0.13641246">
+        <state line="74" column="21" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.41245973">
           <folding />
         </state>
       </provider>
