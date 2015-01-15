@@ -71,31 +71,15 @@
     </div>
 </div>
 <script>
-    function getParentUrl() {
-        var isInIframe = (parent !== window),
-                parentUrl = null;
-
-        if (isInIframe) {
-            parentUrl = document.referrer;
-        }
-
-        return parentUrl;
-    }
-
-    function aki() {
+    function forwardDeviceInfoPage() {
         var pathArray = document.referrer.split( '/' );
         var protocol = pathArray[0];
         var host = pathArray[2];
         var url = protocol + '//' + host;
-        alert(url);
+        window.parent.location.href = url + "/a001000000zjdIT";
     }
 
-    function goToDetailPage() {
-        //alert(window.parent.location);
-        aki();
 
-        window.parent.location.href = "/a001000000zjdIT";
-    }
 </script>
 
 <script>
@@ -149,7 +133,7 @@
 
 
 
-            var contentString="<dl id='infowin1'><dt>" + info.uid + "</dt><dd><a href='javascript:goToDetailPage()'>こちら</a></dd></dl>";
+            var contentString="<dl id='infowin1'><dt>" + info.uid + "</dt><dd><a href='javascript:forwardDeviceInfoPage()'>こちら</a></dd></dl>";
 
 
 
