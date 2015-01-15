@@ -83,9 +83,14 @@
         return parentUrl;
     }
 
+    function aki() {
+        var d = window.parent.domain;
+        alert(d);
+    }
+
     function goToDetailPage() {
         //alert(window.parent.location);
-        alert(getParentUrl());
+        aki();
 
         window.parent.location.href = "/a001000000zjdIT";
     }
