@@ -36,7 +36,7 @@ router.post('/series', function (req, res) {
                 return console.error(err);
             }
 
-            conn.sobject("SensorData__c").create({ Value__c: value, Thing__c: uid, CreatedAt__c: created_at }, function (err, ret) {
+            conn.sobject("SensorData__c").create({ Location__Latitude__s: lat, Location__Longitude__s: lng, Value__c: value, Thing__c: uid, CreatedAt__c: created_at }, function (err, ret) {
                 if (err || !ret.success) {
                     return console.error(err, ret);
                 }
