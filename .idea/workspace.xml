@@ -21,7 +21,7 @@
     <file path="/map.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421290888004" ignored="false" />
     <file path="/app.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411016953" ignored="false" />
     <file path="/a.html" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421709265491" ignored="false" />
-    <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421916933399" ignored="false" />
+    <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421917073475" ignored="false" />
     <file path="/lightsensor.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421916625200" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +54,7 @@
       <file leaf-file-name="android.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/android.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="644" selection-end="644" vertical-scroll-proportion="0.42222223">
+            <state line="24" column="35" selection-start="692" selection-end="692" vertical-scroll-proportion="0.53333336">
               <folding />
             </state>
           </provider>
@@ -440,7 +440,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/android.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="644" selection-end="644" vertical-scroll-proportion="0.42222223">
+        <state line="24" column="35" selection-start="692" selection-end="692" vertical-scroll-proportion="0.53333336">
           <folding />
         </state>
       </provider>
