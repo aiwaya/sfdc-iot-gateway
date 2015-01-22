@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/:uid', function (req, res) {
-    res.render('thing', {pusher_key: process.env.PUSHER_KEY, uid: req.params.uid});
+    res.render('android', {pusher_key: process.env.PUSHER_KEY, uid: req.params.uid});
 });
 
 
