@@ -37,9 +37,12 @@
 <script>
 
 
+    setTimeout(function(){
+        //do what you need here
+    }, 2000);
 
     $(function () {
-        setInterval(send_data('<%= uid %>', 1 * 100, lat, lon), 3000);
+        setInterval(send_data('<%= uid %>', 1 * 100, 1.1, 1.1), 3000);
         //setInterval(send_data('<%= uid %>', navigator.battery.level * 100, lat, lon), 3000);
     });
 

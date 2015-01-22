@@ -53,19 +53,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="android.ejs" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="android.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/android.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="-13.714286">
+            <state line="44" column="61" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.8888889">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="geolocation.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="geolocation.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/geolocation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="6" selection-start="378" selection-end="378" vertical-scroll-proportion="0.36363637">
+            <state line="17" column="6" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -471,16 +471,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/android.ejs">
+    <entry file="file://$PROJECT_DIR$/public/js/geolocation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="-13.714286">
+        <state line="17" column="6" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/geolocation.js">
+    <entry file="file://$PROJECT_DIR$/views/android.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="378" selection-end="378" vertical-scroll-proportion="0.36363637">
+        <state line="44" column="61" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.8888889">
           <folding />
         </state>
       </provider>
