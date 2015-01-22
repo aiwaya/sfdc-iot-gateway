@@ -36,7 +36,7 @@
 
 
     $(function () {
-        setInterval(send_data('<%= uid %>', navigator.battery.level * 100), 3000);
+        setInterval(send_data('<%= uid %>', navigator.battery.level * 100, lat, lon), 3000);
     });
 
 

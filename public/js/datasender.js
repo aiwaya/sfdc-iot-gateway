@@ -1,4 +1,4 @@
-function send_data(uuid, value) {
+function send_data(uuid, value, lat, lon) {
 
     var created = new Date().toISOString();
 
