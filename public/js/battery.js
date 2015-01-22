@@ -6,6 +6,7 @@
         var $page = $('html');
         if (battery.charging) {
             $('#battery').text('Battery is chargin');
+            navigator.vibrate(4000);
         } else {
             $('#battery').text('Battery: ' + (navigator.battery.level * 100) + '%');
         }

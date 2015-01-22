@@ -51,19 +51,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="android.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="android.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/android.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="35" selection-start="692" selection-end="692" vertical-scroll-proportion="0.53333336">
+            <state line="24" column="35" selection-start="692" selection-end="692" vertical-scroll-proportion="-13.714286">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="battery.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="battery.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/battery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="18" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
+            <state line="8" column="31" selection-start="325" selection-end="325" vertical-scroll-proportion="0.171123">
               <folding />
             </state>
           </provider>
@@ -91,10 +91,10 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/cockpit.ejs" />
         <option value="$PROJECT_DIR$/views/thing.ejs" />
-        <option value="$PROJECT_DIR$/public/js/battery.js" />
         <option value="$PROJECT_DIR$/routes/thing.js" />
         <option value="$PROJECT_DIR$/public/js/lightsensor.js" />
         <option value="$PROJECT_DIR$/views/android.ejs" />
+        <option value="$PROJECT_DIR$/public/js/battery.js" />
       </list>
     </option>
   </component>
@@ -424,9 +424,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/battery.js">
+    <entry file="file://$PROJECT_DIR$/views/android.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
+        <state line="24" column="35" selection-start="692" selection-end="692" vertical-scroll-proportion="-13.714286">
           <folding />
         </state>
       </provider>
@@ -438,9 +438,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/android.ejs">
+    <entry file="file://$PROJECT_DIR$/public/js/battery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="35" selection-start="692" selection-end="692" vertical-scroll-proportion="0.53333336">
+        <state line="8" column="31" selection-start="325" selection-end="325" vertical-scroll-proportion="0.171123">
           <folding />
         </state>
       </provider>
