@@ -21,7 +21,7 @@
     <file path="/map.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421290888004" ignored="false" />
     <file path="/app.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411016953" ignored="false" />
     <file path="/a.html" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421709265491" ignored="false" />
-    <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421923870614" ignored="false" />
+    <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421924539579" ignored="false" />
     <file path="/lightsensor.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421916625200" ignored="false" />
     <file path="/geolocation.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421919905264" ignored="false" />
     <file path="/datasender.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421923862226" ignored="false" />
@@ -53,19 +53,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="android.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="android.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/android.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="47" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.75555557">
+            <state line="28" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="-13.714286">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="geolocation.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="geolocation.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/geolocation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="10" selection-start="0" selection-end="384" vertical-scroll-proportion="0.0">
+            <state line="17" column="6" selection-start="378" selection-end="378" vertical-scroll-proportion="0.36363637">
               <folding />
             </state>
           </provider>
@@ -103,14 +103,14 @@
         <option value="$PROJECT_DIR$/views/thing.ejs" />
         <option value="$PROJECT_DIR$/routes/thing.js" />
         <option value="$PROJECT_DIR$/public/js/lightsensor.js" />
-        <option value="$PROJECT_DIR$/public/js/geolocation.js" />
         <option value="$PROJECT_DIR$/public/js/datasender.js" />
+        <option value="$PROJECT_DIR$/public/js/geolocation.js" />
         <option value="$PROJECT_DIR$/views/android.ejs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="14" />
+    <option name="x" value="10" />
     <option name="y" value="23" />
     <option name="width" value="1239" />
     <option name="height" value="709" />
@@ -291,7 +291,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="23" width="1239" height="709" extended-state="0" />
+    <frame x="10" y="23" width="1239" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -457,13 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/geolocation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="0" selection-end="384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/thing.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="28" selection-start="2558" selection-end="2568" vertical-scroll-proportion="-13.142858">
@@ -480,7 +473,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/android.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="47" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.75555557">
+        <state line="28" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="-13.714286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/geolocation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="6" selection-start="378" selection-end="378" vertical-scroll-proportion="0.36363637">
           <folding />
         </state>
       </provider>
