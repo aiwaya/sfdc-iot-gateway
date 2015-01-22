@@ -29,31 +29,14 @@
 <script src="/js/battery.js"></script>
 <script src="/js/lightsensor.js"></script>
 <script src="/js/jquery.min.js"></script>
+<script src="/js/geolocation.js"></script>
+<script src="/js/datasender.js"></script>
 <script>
 
 
 
-    function success(pos) {
-        var crd = pos.coords;
-        lat = crd.latitude;
-        lon = crd.longitude;
-        console.log('Your current position is:');
-        console.log('Latitude : ' + crd.latitude);
-        console.log('Longitude: ' + crd.longitude);
-        console.log('More or less ' + crd.accuracy + ' meters.');
-    };
-
-    function error(err) {
-        console.warn('ERROR(' + err.code + '): ' + err.message);
-    };
-
-    $(function() {
-        var options = {
-            enableHighAccuracy: true,
-            timeout: 5000,
-            maximumAge: 0
-        };
-        navigator.geolocation.getCurrentPosition(success, error, options);
+    $(function () {
+        setInterval(send_data('<%= uid %>', navigator.battery.level * 100), 3000);
     });
 
 

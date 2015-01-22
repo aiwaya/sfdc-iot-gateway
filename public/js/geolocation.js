@@ -1,5 +1,4 @@
 function success(pos) {
-    alert('ok');
     var crd = pos.coords;
     lat = crd.latitude;
     lon = crd.longitude;
