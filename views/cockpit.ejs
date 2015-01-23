@@ -57,7 +57,7 @@
 
     <!--
     <script type="text/javascript"
-            src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/i18n/jquery-ui-i18n.min.js"></script>
+
             -->
     <!-- temp guage -->
 
@@ -180,9 +180,9 @@
         });
     }
 
-    function send_signal_device(mode) {
+    function send_signal_device(value) {
         $.ajax({
-            url: "/api/pusher?mode=" + mode + "&uid=<%= uid %>",
+            url: "/api/pusher?event=led&value=" + value + "&uid=<%= uid %>",
             type: "get",
             async: false,
             success: function (data) {

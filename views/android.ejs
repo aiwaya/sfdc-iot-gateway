@@ -11,9 +11,26 @@
     <script type="text/javascript">
         var pusher = new Pusher('<%= pusher_key %>');
         var channel = pusher.subscribe('<%= uid %>');
-        channel.bind('led', function (data) {
-            $('#led').attr('src', "/images/led" + data.value + ".png");
+        channel.bind('battery', function (data) {
+            if(data.mode == 'signal') {
+                var value = navigator.battery.level * 100;
+                $.ajax({
+                    url: "/api/pusher?event=battery&mode=measure&value=" + value + "&uid=<%= uid %>",
+                    type: "get",
+                    async: false,
+                    success: function (data) {
+                    }
+                });
+
+            }
+
         });
+
+        channel.bind('vibrate', function (data) {
+            navigator.vibrate(5000);
+        });
+
+
     </script>
     <!-- Pusher -->
 
@@ -28,7 +45,7 @@
 
 <script src="/js/modernizr-2.6.2.min.js"></script>
 <!--<script src="/js/jquery.min.js"></script>-->
-<script src="/js/datasender.js"></script>
+
 <script>
 
     var value = 0;
@@ -52,7 +69,6 @@
     }
 
     function sendDataToHeroku(lat, lon) {
-        /*
         setInterval(function () {
             $.ajax({
                 type: "POST",
@@ -74,19 +90,12 @@
             });
 
         }, 3000);
-
-*/
-
-
-        setInterval(send_data('<%= uid %>', value, lat, lon), 3000);
     }
 
 
     $(function () {
         window.addEventListener('devicelight', light);
         navigator.geolocation.getCurrentPosition(successGeolocation, errorGeolocation, {timeout: 1000});
-
-
     });
 
 

@@ -30,7 +30,6 @@ router.post('/series', function (req, res) {
 
     if (process.env.SFDC_USERNAME && process.env.SFDC_PASSWORD) {
         var conn = new jsforce.Connection();
-//        conn.login('sfdciotgateway@demo.jp', 'abcd1234', function (err, res) {
         conn.login(process.env.SFDC_USERNAME, process.env.SFDC_PASSWORD, function (err, res) {
             if (err) {
                 return console.error(err);
@@ -115,8 +114,24 @@ router.get('/pusher', function (req, res) {
     console.log('get:/api/pusher');
 
     var uid = req.query.uid;
-    var mode = req.query.mode; // mode is on or off
-    pusher.trigger(uid, 'led', {"value": mode});
+    var event = req.query.event;
+    var params = {};
+
+    if(event == 'led') {
+        var value = req.query.value; // mode is on or off
+        params = {"value": value};
+    }
+    if(event == 'battery') {
+        if(req.query.value === undefined) {
+            params = {"mode": "signal"};
+        } else {
+            var value = req.query.value;
+            params = {"mode": "measure", "value": value };
+        }
+    }
+    if(event == 'vibrate') {
+    }
+    pusher.trigger(uid, event, params);
     res.status(200).end();
 
 });

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 3, from LayoutIt!</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- Pusher -->
+    <script src="https://js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var pusher = new Pusher('<%= pusher_key %>');
+        var channel = pusher.subscribe('<%= uid %>');
+        channel.bind('battery', function (data) {
+            if(data.mode == 'measure') {
+                var value = data.value;
+                alert(value);
+            }
+
+        });
+
+    </script>
+    <!-- Pusher -->
+
+</head>
+
+<body>
+<div id="b1" data-role="button">Vaibrate</div><br/>
+<div id="b2" data-role="button">battery</div>
+
+</body>
+
+<script src="/js/modernizr-2.6.2.min.js"></script>
+<!--<script src="/js/jquery.min.js"></script>-->
+
+<script>
+
+
+    $(function () {
+        $("#b1").click( function()
+                {
+                    $.ajax({
+                        url: "/api/pusher?event=vibrate&uid=<%= uid %>",
+                        type: "get",
+                        async: false,
+                        success: function (data) {
+                        }
+                    });
+                }
+        );
+
+        $("#b2").click( function()
+                {
+                    $.ajax({
+                        url: "/api/pusher?event=battery&mode=signal&uid=<%= uid %>",
+                        type: "get",
+                        async: false,
+                        success: function (data) {
+                        }
+                    });
+                }
+        );
+
+    });
+
+
+</script>
+</html>
