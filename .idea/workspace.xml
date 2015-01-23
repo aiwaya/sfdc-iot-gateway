@@ -25,7 +25,7 @@
     <file path="/lightsensor.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421916625200" ignored="false" />
     <file path="/geolocation.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421976162412" ignored="false" />
     <file path="/datasender.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421923862226" ignored="false" />
-    <file path="/androidcockpit.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421985194663" ignored="false" />
+    <file path="/androidcockpit.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421986253636" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,7 @@
           <file leaf-file-name="androidcockpit.ejs" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/androidcockpit.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="59" selection-start="615" selection-end="615" vertical-scroll-proportion="0.48430493">
+                <state line="54" column="28" selection-start="1394" selection-end="1394" vertical-scroll-proportion="0.86098653">
                   <folding />
                 </state>
               </provider>
@@ -176,8 +176,8 @@
         <option value="$PROJECT_DIR$/views/cockpit.ejs" />
         <option value="$PROJECT_DIR$/views/thing.ejs" />
         <option value="$PROJECT_DIR$/views/android.ejs" />
-        <option value="$PROJECT_DIR$/views/androidcockpit.ejs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/androidcockpit.ejs" />
       </list>
     </option>
   </component>
@@ -552,7 +552,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/androidcockpit.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="59" selection-start="615" selection-end="615" vertical-scroll-proportion="0.48430493">
+        <state line="54" column="28" selection-start="1394" selection-end="1394" vertical-scroll-proportion="0.86098653">
           <folding />
         </state>
       </provider>

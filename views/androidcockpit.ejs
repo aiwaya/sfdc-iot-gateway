@@ -39,6 +39,7 @@
     $(function () {
         $("#b1").click( function()
                 {
+                    alert('v');
                     $.ajax({
                         url: "/api/pusher?event=vibrate&uid=<%= uid %>",
                         type: "get",
@@ -51,6 +52,7 @@
 
         $("#b2").click( function()
                 {
+                    alert('b');
                     $.ajax({
                         url: "/api/pusher?event=battery&mode=signal&uid=<%= uid %>",
                         type: "get",
