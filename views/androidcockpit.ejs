@@ -15,6 +15,7 @@
             if(data.mode == 'measure') {
                 var value = data.value;
                 alert(value);
+                showBattery(value,100);
             }
 
         });
@@ -22,12 +23,55 @@
     </script>
     <!-- Pusher -->
 
+    <style>
+            /* CSS CODE */
+
+        .battery
+        {
+            background: url('http://s30.postimg.org/kcjgr4hf5/battery.png');
+            height:71px;
+            width:166px;
+            padding:20px;
+            padding-right:30px;
+        }
+
+        .batFill
+        {
+            height:71px;
+            background:#61c419;
+        }
+
+        form input[type=button],
+        form input[type=submit] {
+            color:#fff;
+            text-align: center;
+            background-color: #22AAFF;
+            padding: 5px 10px;
+            border-radius: 5px; /* CSS3 */
+            cursor: pointer;
+            text-shadow: 0px 0px 2px #39d;
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#47c1ef), to(#339ade)); /* Safari */
+            background: -moz-linear-gradient(top,#47c1ef,#339ade) no-repeat; /* FireFox */
+            border: 1px #39d solid;
+            opacity: 1;
+        }
+        form input[type=button]:hover,
+        form input[type=submit]:hover {
+            opacity: 0.9;
+        }
+
+    </style>
+
 </head>
 
 <body>
-<div id="b1" data-role="button">Vaibrate</div><br/>
-<div id="b2" data-role="button">battery</div>
+<input id="b_battery" type="button" value="Get Battery Level">
+<input id="b_vibrate" type="button" value="Vibrate Device">
 
+<div class="battery">
+    <div class="batFill">
+    </div>
+</div>
 </body>
 
 <script src="/js/modernizr-2.6.2.min.js"></script>
@@ -37,7 +81,7 @@
 
 
     $(function () {
-        $("#b1").click( function()
+        $("#b_vibrate").click( function()
                 {
                     alert('v');
                     $.ajax({
@@ -50,7 +94,7 @@
                 }
         );
 
-        $("#b2").click( function()
+        $("#b_battery").click( function()
                 {
                     alert('b');
                     $.ajax({
@@ -64,7 +108,30 @@
         );
 
     });
-
-
 </script>
+
+    <script>
+    /* JAVASCRIPT CODE */
+
+    /* Battery Chart Showcasing Two Values - Current Value & Target Value out of the complete available scale */
+
+
+    var maxVal = 100;
+    var maxWidth = 166;
+    var targetColor = '#ef9e1c';
+    var currentColor = '#61c419';
+
+    function showBattery(currentVal,targetVal)
+    {
+        var targetWidth = ((maxWidth/maxVal)*targetVal).toFixed(2);
+        var currentPercent = ((currentVal/targetVal)*100).toFixed(0);
+        $(".batFill").css("width",targetWidth+"px");
+        $(".batFill").css("background-image","linear-gradient(to right, "+currentColor+" 0%, "+currentColor+" "+currentPercent+"%, "+targetColor+" "+currentPercent+"% , "+targetColor+" 100%)");
+    }
+
+
+    </script>
+
+
+
 </html>
