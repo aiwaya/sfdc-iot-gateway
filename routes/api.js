@@ -39,7 +39,7 @@ router.post('/series', function (req, res) {
                 if (err || !ret.success) {
                     return console.error(err, ret);
                 }
-                console.log("Created record id : " + ret.id);
+                console.log("Created record id at SFDC : " + ret.id + "with value:" +value);
             });
         });
     }
