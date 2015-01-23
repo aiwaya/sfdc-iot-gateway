@@ -16,10 +16,13 @@ router.get('/cockpit/:uid', function (req, res) {
 });
 
 router.post('/androidcockpit', function (req, res) {
-
     console.log('uid:'+ req.body.uid);
-
     res.render('androidcockpit', { pusher_key: process.env.PUSHER_KEY, uid: req.body.uid });
+});
+
+router.get('/androidcockpit', function (req, res) {
+    console.log('uid:'+ req.body.uid);
+    res.render('androidcockpit', { pusher_key: process.env.PUSHER_KEY, uid: req.param("uid") });
 });
 
 
