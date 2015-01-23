@@ -25,25 +25,39 @@
 <div id="battery"/>     dsasd</div>
 
 </body>
-<script>
-    var lat, lon;
-</script>
+
 <script src="/js/modernizr-2.6.2.min.js"></script>
-<script src="/js/battery.js"></script>
-<script src="/js/lightsensor.js"></script>
 <script src="/js/jquery.min.js"></script>
-<script src="/js/geolocation.js"></script>
 <script src="/js/datasender.js"></script>
 <script>
 
+    var value;
 
-    setTimeout(function(){
-        //do what you need here
-    }, 2000);
+    function successGeolocation(pos) {
+        var crd = pos.coords;
+        lat = crd.latitude;
+        lon = crd.longitude;
+        sendDataToHeroku(lat, lon);
+    }
+
+    function errorGeolocation(err) {
+        alert('Can not take geolocation value so use Tokyo location instead (' + err.code + '): ' + err.message);
+        lat = 35.6798053;
+        lon = 139.7646006;
+    }
+
+    function light(event) {
+        value = event.value;
+    }
+
+    function sendDataToHeroku(lat, lon) {
+        setInterval(send_data('<%= uid %>', value, lat, lon), 3000);
+    }
+
 
     $(function () {
-        setInterval(send_data('<%= uid %>', 1 * 100, 1.1, 1.1), 3000);
-        //setInterval(send_data('<%= uid %>', navigator.battery.level * 100, lat, lon), 3000);
+        window.addEventListener('devicelight', light);
+        navigator.geolocation.getCurrentPosition(successGeolocation, errorGeolocation, {timeout: 1000});
     });
 
 

@@ -5,14 +5,26 @@ function success(pos) {
 };
 
 function error(err) {
-    alert('ERROR(' + err.code + '): ' + err.message);
+    alert('Can not take geolocation value so use Tokyo location instead (' + err.code + '): ' + err.message);
+    lat = 35.6798053;
+    lon = 139.7646006;
 };
 
-$(function() {
-    var options = {
-        enableHighAccuracy: true,
-        timeout: 5000,
-        maximumAge: 0
-    };
-    navigator.geolocation.getCurrentPosition(success, error, options);
+$(function () {
+    navigator.geolocation.getCurrentPosition(success, error, {timeout: 1000});
 });
+
+
+$(function () {
+    navigator.geolocation.getCurrentPosition(function (pos) {
+        var crd = pos.coords;
+        lat = crd.latitude;
+        lon = crd.longitude;
+        send_data()
+    }, function (err) {
+        alert('Can not take geolocation value so use Tokyo location instead (' + err.code + '): ' + err.message);
+        lat = 35.6798053;
+        lon = 139.7646006;
+    }, {timeout: 1000});
+});
+
