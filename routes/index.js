@@ -15,7 +15,7 @@ router.get('/cockpit/:uid', function (req, res) {
     res.render('cockpit', { pusher_key: process.env.PUSHER_KEY, uid: req.param("uid") });
 });
 
-router.post('/androidcockpit/:uid', function (req, res) {
+router.post('/androidcockpit', function (req, res) {
 
     console.log('uid:'+ req.body.uid);
 
