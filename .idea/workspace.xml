@@ -48,7 +48,7 @@
       <file leaf-file-name="android.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/android.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="24" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.6389578">
+            <state line="96" column="12" selection-start="2616" selection-end="2616" vertical-scroll-proportion="0.73200995">
               <folding />
             </state>
           </provider>
@@ -491,7 +491,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/android.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="24" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.6389578">
+        <state line="96" column="12" selection-start="2616" selection-end="2616" vertical-scroll-proportion="0.73200995">
           <folding />
         </state>
       </provider>
