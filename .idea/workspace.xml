@@ -21,7 +21,7 @@
     <file path="/map.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421290888004" ignored="false" />
     <file path="/app.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411016953" ignored="false" />
     <file path="/a.html" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421709265491" ignored="false" />
-    <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421989657504" ignored="false" />
+    <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421989921360" ignored="false" />
     <file path="/lightsensor.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421916625200" ignored="false" />
     <file path="/geolocation.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421976162412" ignored="false" />
     <file path="/datasender.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421923862226" ignored="false" />
@@ -48,7 +48,7 @@
       <file leaf-file-name="androidcockpit.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/androidcockpit.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="33" selection-start="634" selection-end="634" vertical-scroll-proportion="-9.714286">
+            <state line="25" column="1" selection-start="704" selection-end="715" vertical-scroll-proportion="-14.285714">
               <folding />
             </state>
           </provider>
@@ -57,7 +57,7 @@
       <file leaf-file-name="android.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/android.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="34" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.3573201">
+            <state line="101" column="40" selection-start="2695" selection-end="2695" vertical-scroll-proportion="0.82133996">
               <folding />
             </state>
           </provider>
@@ -493,14 +493,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/androidcockpit.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="634" selection-end="634" vertical-scroll-proportion="-9.714286">
+        <state line="25" column="1" selection-start="704" selection-end="715" vertical-scroll-proportion="-14.285714">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/android.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="34" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.3573201">
+        <state line="101" column="40" selection-start="2695" selection-end="2695" vertical-scroll-proportion="0.82133996">
           <folding />
         </state>
       </provider>

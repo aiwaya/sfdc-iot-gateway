@@ -34,10 +34,17 @@
     </script>
     <!-- Pusher -->
 
+    <style>
+        p.resizeimage img { width: 100%; }
+    </style>
+
 </head>
 
 <body>
-<img src="/images/pi_client.jpg"/>
+<p class="resizeimage">
+    <img src="/images/pi_client.jpg"/>
+</p>
+
 
 </body>
 
@@ -92,6 +99,7 @@
 
 
     $(function () {
+        setTimeout(scrollTo, 100, 0, 1);
         window.addEventListener('devicelight', light);
         navigator.geolocation.getCurrentPosition(successGeolocation, errorGeolocation, {timeout: 1000});
     });
