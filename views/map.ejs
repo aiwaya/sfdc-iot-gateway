@@ -65,7 +65,9 @@
                 condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
                 euismod. Donec sed odio dui.
             </p>
-
+            <% if(heroku_page) { %>
+            <a href='/thing/<%= uid %>'>new device</a></dd></dl>";
+            <% }
         </div>
     </div>
 </div>

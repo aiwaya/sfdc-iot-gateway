@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var utils = require('../utils');
 
 /* Called from Heroku App */
 router.get('/', function (req, res) {
-    res.render('map', {lat: process.env.LATITUDE, lon: process.env.LONGITUDE, heroku_page: true});
+    var uid = utils.random_id();
+    res.render('map', {lat: process.env.LATITUDE, lon: process.env.LONGITUDE, heroku_page: true, uid: uid});
 });
 
 /* Called from Salesforce */

@@ -1,5 +1,12 @@
 module.exports = {
 
+    random_id: function() {
+        var low = 1;
+        var high = 100000;
+        var r = Math.floor(Math.random() * (high - low) + low);
+        return 'ID' + r;
+    },
+
 
     create_query: function(params) {
         var result = new Array();

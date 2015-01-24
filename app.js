@@ -26,21 +26,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api', api);
 app.use('/thing', thing);
 
-/*
- app.use(function (req, res, next) {
- var user = auth(req);
- if (user === undefined || user['name'] !== process.env.BASIC_USERNAME || user['pass'] !== process.env.BASIC_PASSWORD) {
- res.statusCode = 401;
- res.setHeader('WWW-Authenticate', 'Basic realm="MyRealmName"');
- res.end('Unauthorized');
-
- } else {
- next();
- }
- s
- });
- */
-
 app.use('/', routes);
 
 app.use(function (req, res, next) {
