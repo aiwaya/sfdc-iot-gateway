@@ -11,10 +11,10 @@ function error(err) {
 };
 
 $(function () {
-    navigator.geolocation.getCurrentPosition(success, error, {timeout: 1000});
+    navigator.geolocation.getCurrentPosition(success, error, {timeout: 5000});
 });
 
-
+/*
 $(function () {
     navigator.geolocation.getCurrentPosition(function (pos) {
         var crd = pos.coords;
@@ -27,4 +27,4 @@ $(function () {
         lon = 139.7646006;
     }, {timeout: 5000});
 });
-
+*/

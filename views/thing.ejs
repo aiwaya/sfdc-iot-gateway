@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="/css/circular-slider.min.css" />
     <script src="/js/circular-slider.min.js"></script>
-    <script src="/js/geolocation.js"></script>
+    <!--<script src="/js/geolocation.js"></script>-->
 
 
 
@@ -30,12 +30,10 @@
 <body>
 <img id="led" style="width: 15%; height: 15%" src="/images/ledoff.png">
 <div id="slider"></div>
-
-
-
-
 </body>
 <script>
+    var lat, lon;
+
     function get_now() {
         return new Date().toISOString();
     }
@@ -43,9 +41,10 @@
     function get_data() {
         return halfCircularSlider.getValue();
     }
-    /*
 
-    function success(pos) {
+
+
+    function successLocation(pos) {
         var crd = pos.coords;
         lat = crd.latitude;
         lon = crd.longitude;
@@ -55,7 +54,7 @@
         console.log('More or less ' + crd.accuracy + ' meters.');
     };
 
-    function error(err) {
+    function errorLocation(err) {
         alert('Can not receive Geolocation(' + err.code + '): ' + err.message);
     };
 
@@ -65,12 +64,11 @@
             timeout: 5000,
             maximumAge: 0
         };
-        navigator.geolocation.getCurrentPosition(success, error, options);
+        navigator.geolocation.getCurrentPosition(successLocation, errorLocation, options);
     });
-    */
+
 
     $(function () {
-
         halfCircularSlider = $('#slider').CircularSlider({
             min : 0,
             max: 50,
