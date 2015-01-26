@@ -18,7 +18,7 @@
     <file path="/app.json" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411214319" ignored="false" />
     <file path="/index.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422233109757" ignored="false" />
     <file path="/cockpit.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422269067379" ignored="false" />
-    <file path="/map.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422274455901" ignored="false" />
+    <file path="/map.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422275015336" ignored="false" />
     <file path="/app.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411016953" ignored="false" />
     <file path="/a.html" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421709265491" ignored="false" />
     <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421990970982" ignored="false" />
@@ -58,7 +58,7 @@
       <file leaf-file-name="map.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/map.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="105" selection-start="6448" selection-end="6448" vertical-scroll-proportion="0.35528943">
+            <state line="176" column="141" selection-start="6785" selection-end="6785" vertical-scroll-proportion="0.42714572">
               <folding />
             </state>
           </provider>
@@ -480,7 +480,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/map.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="105" selection-start="6448" selection-end="6448" vertical-scroll-proportion="0.35528943">
+        <state line="176" column="141" selection-start="6785" selection-end="6785" vertical-scroll-proportion="0.42714572">
           <folding />
         </state>
       </provider>
