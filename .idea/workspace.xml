@@ -17,7 +17,7 @@
     <file path="/.env" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421980355342" ignored="false" />
     <file path="/app.json" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411214319" ignored="false" />
     <file path="/index.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422233109757" ignored="false" />
-    <file path="/cockpit.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421983604955" ignored="false" />
+    <file path="/cockpit.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422234110658" ignored="false" />
     <file path="/map.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422233689228" ignored="false" />
     <file path="/app.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411016953" ignored="false" />
     <file path="/a.html" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421709265491" ignored="false" />
@@ -55,10 +55,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="map.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/map.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="55" selection-start="2767" selection-end="2767" vertical-scroll-proportion="0.6923077">
+            <state line="68" column="55" selection-start="2767" selection-end="2767" vertical-scroll-proportion="44.285713">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cockpit.ejs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/cockpit.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="113" selection-start="3290" selection-end="3290" vertical-scroll-proportion="0.44755244">
               <folding />
             </state>
           </provider>
@@ -80,7 +89,6 @@
         <option value="$PROJECT_DIR$/public/js/datasender.js" />
         <option value="$PROJECT_DIR$/public/js/geolocation.js" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/views/cockpit.ejs" />
         <option value="$PROJECT_DIR$/views/thing.ejs" />
         <option value="$PROJECT_DIR$/routes/api.js" />
         <option value="$PROJECT_DIR$/views/android.ejs" />
@@ -90,12 +98,13 @@
         <option value="$PROJECT_DIR$/utils.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/map.ejs" />
+        <option value="$PROJECT_DIR$/views/cockpit.ejs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1572" />
-    <option name="y" value="99" />
+    <option name="x" value="1625" />
+    <option name="y" value="141" />
     <option name="width" value="1412" />
     <option name="height" value="884" />
   </component>
@@ -244,7 +253,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1572" y="99" width="1412" height="884" extended-state="0" />
+    <frame x="1625" y="141" width="1412" height="884" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -363,13 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/cockpit.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="26" selection-start="7786" selection-end="7786" vertical-scroll-proportion="0.58064514">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="39" selection-start="481" selection-end="481" vertical-scroll-proportion="0.29776675">
@@ -435,7 +437,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/map.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="55" selection-start="2767" selection-end="2767" vertical-scroll-proportion="0.6923077">
+        <state line="68" column="55" selection-start="2767" selection-end="2767" vertical-scroll-proportion="44.285713">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cockpit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="113" selection-start="3290" selection-end="3290" vertical-scroll-proportion="0.44755244">
           <folding />
         </state>
       </provider>

@@ -69,13 +69,11 @@
     <div class="row clearfix">
         <div class="col-md-12 column">
             <h2>
-                header
+                IoT Cockpit for <%= uid %>
             </h2>
 
             <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui.
+                You can add header part here.
             </p>
             <br/><br/><br/><br/>
 
@@ -89,8 +87,7 @@
                     <span class="label label-default">on/off</span>
 
                     <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"
-                               checked>
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
                         <label class="onoffswitch-label" for="myonoffswitch">
                             <span class="onoffswitch-inner"></span>
                             <span class="onoffswitch-switch"></span>
@@ -101,13 +98,11 @@
             <br/><br/><br/><br/><br/><br/><br/><br/>
 
             <h2>
-                Temp
+                Historical Temperature Data
             </h2>
 
             <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui.
+                You can add footter part here.
             </p>
             <br/><br/><br/><br/>
 
@@ -124,11 +119,11 @@
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
                                     </button>
                                     <h4 class="modal-title" id="myModalLabel">
-                                        データが見当たりません。
+                                        No Data found
                                     </h4>
                                 </div>
                                 <div class="modal-body">
-                                    選択した日付ではデータが見当たりませんでした。別の日付を選択したください。
+                                    There is no data stored at the selected date. Please change the date.
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -164,7 +159,7 @@
         ykeys: ['value'],
         ymax: 'auto',
         ymin: 'auto',
-        labels: ['温度'],
+        labels: ['℃'],
         parseTime: false,
         hideHover: true,
         resize: true
@@ -198,7 +193,7 @@
 
         var data = google.visualization.arrayToDataTable([
             ['Label', 'Value'],
-            ['温度', 0]
+            ['Temp', 0]
         ]);
 
         var options = {
