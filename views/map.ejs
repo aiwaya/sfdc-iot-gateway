@@ -171,9 +171,11 @@
 
 
             <% if(heroku_page) { %>
-                var contentString="<dl id='infowin1'><dt>" + info.uid + "</dt><dd><a href='/cockpit/" + info.uid + "'>Detail</a></dd></dl>";
+                var contentString="<dl id='infowin1'><dd><a href='/cockpit/" + info.uid + "'>"+info.uid+"</a></dd></dl>";
+                //var contentString="<dl id='infowin1'><dt>" + info.uid + "</dt><dd><a href='/cockpit/" + info.uid + "'>Detail</a></dd></dl>";
             <% } else { %>
                 var contentString = "<dl id='infowin1'><dt>" + info.uid + "</dt><dd><a href=\"javascript:forwardDeviceInfoPage('" + info.uid + "')\"\>Detail</a></dd></dl>";
+                //var contentString = "<dl id='infowin1'><dt>" + info.uid + "</dt><dd><a href=\"javascript:forwardDeviceInfoPage('" + info.uid + "')\"\>Detail</a></dd></dl>";
             <% } %>
 
             //var contentString="<dl id='infowin1'><dt>" + info.uid + "</dt><dd>aki<a href='/cockpit/" + info.uid + "'>こちら</a></dd></dl>";
