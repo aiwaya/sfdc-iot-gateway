@@ -110,6 +110,36 @@ router.get('/series', function (req, res) {
     });
 });
 
+router.get('/reset', function (req, res) {
+    console.log('get:/api/reset');
+    pg.connect(db_config, function (err, client, done) {
+        client.query('Delete From series;', [], function (err, result) {
+            done();
+            if (err) {
+                console.log('Delete Series Error: ' + err);
+                res.status(500).end();
+            } else {
+                res.json(result.rows);
+            }
+        });
+    });
+
+    pg.connect(db_config, function (err, client, done) {
+        client.query('Delete From locations;', [], function (err, result) {
+            done();
+            if (err) {
+                console.log('Delete locations Error: ' + err);
+                res.status(500).end();
+            } else {
+                res.json(result.rows);
+            }
+        });
+    });
+
+
+});
+
+
 router.get('/pusher', function (req, res) {
     console.log('get:/api/pusher');
 
