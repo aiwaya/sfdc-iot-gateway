@@ -25,6 +25,6 @@ $(function () {
         alert('Can not take geolocation value so use Tokyo location instead (' + err.code + '): ' + err.message);
         lat = 35.6798053;
         lon = 139.7646006;
-    }, {timeout: 1000});
+    }, {timeout: 5000});
 });
 
