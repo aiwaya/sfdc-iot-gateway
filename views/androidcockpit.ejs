@@ -83,7 +83,6 @@
     $(function () {
         $("#b_vibrate").click( function()
                 {
-                    alert('v');
                     $.ajax({
                         url: "/api/pusher?event=vibrate&uid=<%= uid %>",
                         type: "get",
@@ -96,7 +95,6 @@
 
         $("#b_battery").click( function()
                 {
-                    alert('b');
                     $.ajax({
                         url: "/api/pusher?event=battery&mode=signal&uid=<%= uid %>",
                         type: "get",
