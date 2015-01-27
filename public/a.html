@@ -1,70 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style type="text/css">
-        .onoffswitch {
-            position: relative; width: 121px;
-            -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-        }
-        .onoffswitch-checkbox {
-            display: none;
-        }
-        .onoffswitch-label {
-            display: block; overflow: hidden; cursor: pointer;
-            border: 0px solid #999999; border-radius: 0px;
-        }
-        .onoffswitch-inner {
-            display: block; width: 200%; margin-left: -100%;
-            -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
-            -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
-        }
-        .onoffswitch-inner > span {
-            display: block; float: left; position: relative; width: 50%; height: 44px; padding: 0; line-height: 44px;
-            font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-            -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-        }
-        .onoffswitch-inner .onoffswitch-active {
-            padding-left: 15px;
-            background-color: #C2C2C2; color: #FFFFFF;
-        }
-        .onoffswitch-inner .onoffswitch-inactive {
-            padding-right: 15px;
-            background-color: #C2C2C2; color: #FFFFFF;
-            text-align: right;
-        }
-        .onoffswitch-switch {
-            display: block; width: 45px; margin: 0px; text-align: center;
-            border: 0px solid #999999;border-radius: 0px;
-            position: absolute; top: 0; bottom: 0;
-        }
-        .onoffswitch-active .onoffswitch-switch {
-            background: #27A1CA; left: 0;
-        }
-        .onoffswitch-inactive .onoffswitch-switch {
-            background: #A1A1A1; right: 0;
-        }
-        .onoffswitch-active .onoffswitch-switch:before {
-            content: " "; position: absolute; top: 0; left: 45px;
-            border-style: solid; border-color: #27A1CA transparent transparent #27A1CA; border-width: 22px 12px;
-        }
-        .onoffswitch-inactive .onoffswitch-switch:before {
-            content: " "; position: absolute; top: 0; right: 45px;
-            border-style: solid; border-color: transparent #A1A1A1 #A1A1A1 transparent; border-width: 22px 12px;
-        }
-        .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-            margin-left: 0;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <title>Salesforce IoT Quick Demo</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- Pusher -->
+    <script src="https://js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var pusher = new Pusher('cf6d30cb11a9b6255d0f');
+        var channel = pusher.subscribe('a');
+        channel.bind('led', function (data) {
+            $('#led').attr('src', "../images/led" + data.value + ".png");
+        });
+    </script>
+    <!-- Pusher -->
+
+    <link rel="stylesheet" href="../css/circular-slider.min.css" />
+    <script src="../js/circular-slider.min.js"></script>
+    <script src="../js/geolocation.js"></script>
+
+<style>
+    html{
+        overflow: hidden;
+        min-height: 440px;
+    }
+
+    body{ 
+        overflow: hidden;
+        height: 100%;
+        min-height: 440px;
+        width: 100%;
+        margin: 0;
+        background-image: url('../images/background.png'); 
+        background-size : 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: left top;
+    }
+    .jcs{
+        border-color:rgb(168, 169, 172);
+    }
+    .jcs-value{
+        background-image: url('../images/blackflame.png'); 
+        background-size : 100% 100%;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: left top;
+        height: 50px !important;
+        border-radius: 0;
+        line-height: 50px;
+        border:0;
+
+    }
+    .jcs-indicator{
+        background-image: url('../images/indicator.png'); 
+        background-size : 20px 20px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-color: rgba(255,255,255,0);
+        border: 1px solid gray;
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    }
+
+    #ledWrapper{
+        margin: 80px calc(50% - 80px) 0;
+    }
+    #ledWrapper img{
+        width:160px;
+        height:160px;
+    }
+    #sliderWrapper{
+        margin: 74px calc(50% - 110px) 0;
+        height: 100px;
+    }
+    #slider{
+        width:220px;
+    }
+</style>
+
+
 </head>
-<body>
-<div class="onoffswitch">
-    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-    <label class="onoffswitch-label" for="myonoffswitch">
-        <span class="onoffswitch-inner">
-            <span class="onoffswitch-active"><span class="onoffswitch-switch">ON</span></span>
-            <span class="onoffswitch-inactive"><span class="onoffswitch-switch">OFF</span></span>
-        </span>
-    </label>
-</div>
+
+<body ontouchmove="event.preventDefault()">
+    <div id="container">
+        <div id="ledWrapper">
+            <img id="led" src="../images/ledalert.png" />
+<!--
+            <img id="led" src="../images/ledoff.png" />
+            <img id="led" src="../images/ledon.png" /> 
+            切り替え: $('#led').attr('src', '../images/ledon.png')
+-->
+        </div>
+        <div id="sliderWrapper">
+            <div id="slider"></div>
+        </div>
+    </div>
+
 </body>
+<script>
+    function get_now() {
+        return new Date().toISOString();
+    }
+
+    function get_data() {
+        return halfCircularSlider.getValue();
+    }
+    /*
+
+    function success(pos) {
+        var crd = pos.coords;
+        lat = crd.latitude;
+        lon = crd.longitude;
+        console.log('Your current position is:');
+        console.log('Latitude : ' + crd.latitude);
+        console.log('Longitude: ' + crd.longitude);
+        console.log('More or less ' + crd.accuracy + ' meters.');
+    };
+
+    function error(err) {
+        alert('Can not receive Geolocation(' + err.code + '): ' + err.message);
+    };
+
+    $(function() {
+        var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        };
+        navigator.geolocation.getCurrentPosition(success, error, options);
+    });
+    */
+
+    $(function () {
+
+        halfCircularSlider = $('#slider').CircularSlider({
+            radius: 100,
+            min : 0,
+            max: 50,
+            value : 23,
+            labelSuffix: "℃",
+            shape: "Half Circle",
+            slide : function(value) {
+                if (value < 50) {
+                    //ui.next().css({'background' : 'rgba(250, 81, 81,' + ((100 - value) / 100) + ')'});
+                } else {
+                //    ui.next().css({'background' : 'rgba(87, 250, 87,' + (value / 100) + ')'});
+                }
+            }
+        });
+    });
+
+    $(function () {
+        setInterval(function () {
+            $.ajax({
+                type: "POST",
+                url: "/api/series",
+                data: {
+                    "value": get_data(),
+                    "uid": "a",
+                    "created_at": get_now(),
+                    "latitude": lat,
+                    "longitude": lon
+                },
+                success: function(j_data){
+                    console.log("GET: /api/series success " +get_data());
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    console.log("Failed : GET /api/series  " + textStatus);
+                    console.log("Error: " + errorThrown);
+                }
+            });
+
+        }, 3000);
+    });
+</script>
 </html>

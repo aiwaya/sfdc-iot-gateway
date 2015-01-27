@@ -62,100 +62,34 @@
     <!-- temp guage -->
 
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-
-    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-    <!-- ↓css追加-->
     <style>
-        .container{
-            z-index: 1001;
-            top: -250px;
-            position: relative;
-        }
-        .myfont{
-            font-family: 'Montserrat', sans-serif;
-        }
-        .header-background{
-            z-index: 1000;
-            height:250px;
-
-            background: #197ec1; /* Old browsers */
-            background: -moz-linear-gradient(top,  #197ec1 0%, #85b9dc 33%, #ffffff 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#197ec1), color-stop(33%,#85b9dc), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(top,  #197ec1 0%,#85b9dc 33%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(top,  #197ec1 0%,#85b9dc 33%,#ffffff 100%); /* Opera 11.10+ */
-            background: -ms-linear-gradient(top,  #197ec1 0%,#85b9dc 33%,#ffffff 100%); /* IE10+ */
-            background: linear-gradient(to bottom,  #197ec1 0%,#85b9dc 33%,#ffffff 100%); /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#197ec1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-        }
-
-        .myHeader{
-            background-image: url("/images/map-headerImage.png");
-            background-size : 100% 100%;
-            background-repeat: no-repeat;
-
-            background-position: left top;
-            border-radius: 0;
-            height: 250px;
-        }
-
-        #title{
-            text-align: center;
-            padding-top: 70px;
-            font-size: 80px;
-            color: rgb(29, 32, 136);
-        }
-
-        #mapWrapper{
-            margin: 0 auto 24px auto;
-            padding: 8px;
-            width: 816px;
-            height:516px;
-            background: #cbe9f7; /* Old browsers */
-            background: -moz-linear-gradient(top,  #cbe9f7 0%, #00add3 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cbe9f7), color-stop(100%,#00add3)); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(top,  #cbe9f7 0%,#00add3 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(top,  #cbe9f7 0%,#00add3 100%); /* Opera 11.10+ */
-            background: -ms-linear-gradient(top,  #cbe9f7 0%,#00add3 100%); /* IE10+ */
-            background: linear-gradient(to bottom,  #cbe9f7 0%,#00add3 100%); /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbe9f7', endColorstr='#00add3',GradientType=0 ); /* IE6-9 */
-
-        }
-        #mapDiv{
-            width: 800px;
-            height:500px;
+        .centeralign{
+            text-align:center;
         }
     </style>
-
 </head>
 
 <body>
-<div class="header-background"></div>
 <div class="container">
-    <div class="row clearfix">
-        <div class="col-md-12 column myHeader">
-            <div id="title" class="myfont">Device Cockpit</div>
-        </div>
-    </div>
     <div class="row clearfix">
         <div class="col-md-12 column">
             <h2>
-                Device ID : <%= uid %>
+                IoT Cockpit for <%= uid %>
             </h2>
 
+            <p>
+                The potential to fundamentally transform the way a customer experiences a product, both in terms of interface and in terms of the relationship with the vendor, is absolutely there, as is the potential to fundamentally transform how we do sales, service, and marketing from the business side. Salesforce and Heroku are in the game to help our customers transform their businesses with different systems of engagement by offering the capability to change how they run those core business functions.
+            </p>
+            <div class="row clearfix" style="margin-bottom: 150px; margin-top: 50px">
+                <div class="col-md-6 column centeralign">
+                    <!--<span class="label label-default ">current</span>-->
 
-            <br/><br/><br/><br/>
-
-            <div class="row clearfix">
-                <div class="col-md-6 column">
-                    <span class="label label-default">current</span>
-
-                    <div id="chart_div" style="width: 400px; height: 120px;"></div>
+                    <div id="chart_div" style="width: 400px; height: 120px; "></div>
                 </div>
-                <div class="col-md-6 column">
-                    <span class="label label-default">on/off</span>
+                <div class="col-md-6 column centeralign">
+                    <!--<span class="label label-default ">on/off</span>-->
 
-                    <div class="onoffswitch">
+                    <div class="onoffswitch" sytle="margin: 0 auto">
                         <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
                         <label class="onoffswitch-label" for="myonoffswitch">
                             <span class="onoffswitch-inner"></span>
@@ -164,14 +98,14 @@
                     </div>
                 </div>
             </div>
-            <br/><br/><br/><br/><br/><br/><br/><br/>
-
             <h2>
                 Historical Temperature Data
             </h2>
 
+            <p>
+                You can add footter part here.
+            </p>
 
-            <br/><br/><br/><br/>
 
             <div class="row clearfix">
                 <div class="col-md-12 column">
@@ -206,7 +140,7 @@
 
                 </div>
             </div>
-            <br/><br/><br/><br/>
+
 
             <p>
                 Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
