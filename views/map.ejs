@@ -244,7 +244,8 @@
 </script>
 
 <% if(heroku_page) { %>
-<a href='/thing/<%= uid %>?t=temperature' target="_blank">Create new device</a></dd></dl>
+  <a href='/thing/<%= uid %>?t=temperature' target="_blank">Create new device</a><br/>
+  <a href='/api/reset' target="_blank">Reset data for new demo</a>
 <% } %>
 </body>
 </html>
