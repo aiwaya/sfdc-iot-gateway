@@ -40,19 +40,19 @@ app.use(function (err, req, res, next) {
     console.log("Program Error: " + req.originalUrl);
     console.log(err);
 
-    var email = new sendgrid.Email({
-            to: process.env.YOUR_EMAIL,
-            from: process.env.YOUR_EMAIL,
-            subject: 'Error at IoTGateway',
-            text: err.toString()
-        }
-    );
+        var email = new sendgrid.Email({
+                to: process.env.YOUR_EMAIL,
+                from: process.env.YOUR_EMAIL,
+                subject: 'Error at IoTGateway',
+                text: err.toString()
+            }
+        );
 
-    sendgrid.send(email, function (err, json) {
-        if (err) {
-            return console.error(err);
-        }
-    })
+        sendgrid.send(email, function (err, json) {
+            if (err) {
+                return console.error(err);
+            }
+        })
 
 
     res.status(err.status || 500);

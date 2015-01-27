@@ -21,9 +21,6 @@ router.get('/androidcockpit/:uid', function (req, res) {
     res.render('androidcockpit', { pusher_key: process.env.PUSHER_KEY, uid: req.param("uid") });
 });
 
-
-
-
 module.exports = router;
 
 
