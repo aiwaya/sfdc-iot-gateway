@@ -36,13 +36,6 @@
 <script>
     var lat, lon;
 
-    function get_now() {
-        //return new Date().toISOString();
-        //return new Date().toLocaleDateString();
-    return moment().format();
-
-    }
-
     function get_data() {
         var value = $('#value').val();
         return value;
@@ -81,7 +74,7 @@
                 data: {
                     "value": get_data(),
                     "uid": "<%= uid %>",
-                    "created_at": get_now(),
+                    "created_at": moment().format(),
                     "latitude": lat,
                     "longitude": lon
                 },
