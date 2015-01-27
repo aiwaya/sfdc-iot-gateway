@@ -10,6 +10,7 @@
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
+    <script src="/js/moment.min.js"></script>
     <!-- Pusher -->
     <script src="https://js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -37,7 +38,9 @@
 
     function get_now() {
         //return new Date().toISOString();
-        return new Date().toLocaleDateString();
+        //return new Date().toLocaleDateString();
+    return moment().format();
+
     }
 
     function get_data() {
