@@ -59,7 +59,7 @@
       <file leaf-file-name="thing.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/thing.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.3129103">
+            <state line="39" column="47" selection-start="993" selection-end="993" vertical-scroll-proportion="0.13333334">
               <folding />
             </state>
           </provider>
@@ -68,7 +68,7 @@
       <file leaf-file-name="android.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/android.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="20" selection-start="1133" selection-end="1133" vertical-scroll-proportion="-4.6190476">
+            <state line="42" column="20" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,10 +104,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1353" />
-    <option name="y" value="56" />
+    <option name="x" value="64" />
+    <option name="y" value="23" />
     <option name="width" value="1823" />
-    <option name="height" value="1109" />
+    <option name="height" value="709" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -135,6 +135,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,7 +198,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,8 +205,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -268,7 +268,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1353" y="56" width="1823" height="1109" extended-state="0" />
+    <frame x="64" y="23" width="1823" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -361,16 +361,12 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="112" selection-start="630" selection-end="630" vertical-scroll-proportion="0.29347825">
-          <folding />
-        </state>
+        <state line="18" column="112" selection-start="630" selection-end="630" vertical-scroll-proportion="0.29347825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layoutbak.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="115" selection-end="115" vertical-scroll-proportion="-2.2857144">
-          <folding />
-        </state>
+        <state line="4" column="40" selection-start="115" selection-end="115" vertical-scroll-proportion="-2.2857144" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/error.ejs">
@@ -380,9 +376,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/androidcockpit.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="36" selection-start="103" selection-end="103" vertical-scroll-proportion="-2.2857144">
-          <folding />
-        </state>
+        <state line="4" column="36" selection-start="103" selection-end="103" vertical-scroll-proportion="-2.2857144" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/geolocation.js">
@@ -392,33 +386,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="15" selection-start="209" selection-end="209" vertical-scroll-proportion="0.025806451">
-          <folding />
-        </state>
+        <state line="10" column="15" selection-start="209" selection-end="209" vertical-scroll-proportion="0.025806451" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="43" selection-start="4426" selection-end="4426" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="127" column="43" selection-start="4426" selection-end="4426" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/cockpit.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="512" selection-start="3255" selection-end="3255" vertical-scroll-proportion="0.8296296">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="80" column="512" selection-start="3255" selection-end="3255" vertical-scroll-proportion="0.8296296" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/circular-slider.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/map.ejs">
@@ -430,30 +413,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/circular-slider.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/thing_original.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="15" selection-start="1557" selection-end="1801" vertical-scroll-proportion="0.48063782">
-          <folding />
-        </state>
+        <state line="64" column="15" selection-start="1557" selection-end="1801" vertical-scroll-proportion="0.48063782" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/android.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="20" selection-start="1133" selection-end="1133" vertical-scroll-proportion="-4.6190476">
+        <state line="42" column="20" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/temperature.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/thing.js">
@@ -465,7 +442,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/thing.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.3129103">
+        <state line="39" column="47" selection-start="993" selection-end="993" vertical-scroll-proportion="0.13333334">
           <folding />
         </state>
       </provider>
