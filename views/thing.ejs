@@ -23,7 +23,6 @@
 
     <link rel="stylesheet" href="../css/circular-slider.min.css" />
     <script src="../js/circular-slider.min.js"></script>
-    <script src="../js/geolocation.js"></script>
 
     <style>
         html{
@@ -103,7 +102,10 @@
 </div>
 
 </body>
+
 <script>
+    var lat, lon;
+
     function get_now() {
         return new Date().toISOString();
     }
@@ -111,31 +113,31 @@
     function get_data() {
         return halfCircularSlider.getValue();
     }
-    /*
 
-     function success(pos) {
-     var crd = pos.coords;
-     lat = crd.latitude;
-     lon = crd.longitude;
-     console.log('Your current position is:');
-     console.log('Latitude : ' + crd.latitude);
-     console.log('Longitude: ' + crd.longitude);
-     console.log('More or less ' + crd.accuracy + ' meters.');
-     };
+    function successLocation(pos) {
+        var crd = pos.coords;
+        lat = crd.latitude;
+        lon = crd.longitude;
+        console.log('Your current position is:');
+        console.log('Latitude : ' + crd.latitude);
+        console.log('Longitude: ' + crd.longitude);
+        console.log('More or less ' + crd.accuracy + ' meters.');
+    };
 
-     function error(err) {
-     alert('Can not receive Geolocation(' + err.code + '): ' + err.message);
-     };
+    function errorLocation(err) {
+        alert('Can not receive Geolocation(' + err.code + '): ' + err.message);
+    };
 
-     $(function() {
-     var options = {
-     enableHighAccuracy: true,
-     timeout: 5000,
-     maximumAge: 0
-     };
-     navigator.geolocation.getCurrentPosition(success, error, options);
-     });
-     */
+
+    $(function() {
+        var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        };
+        navigator.geolocation.getCurrentPosition(successLocation, errorLocation, options);
+    });
+
 
     $(function () {
 
