@@ -88,7 +88,7 @@
           <file leaf-file-name="thing.ejs" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/thing.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="181" column="7" selection-start="5279" selection-end="5279" vertical-scroll-proportion="-43.61905">
+                <state line="182" column="7" selection-start="5281" selection-end="5281" vertical-scroll-proportion="-43.61905">
                   <folding />
                 </state>
               </provider>
@@ -131,7 +131,7 @@
           <file leaf-file-name="thing.ejs" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/thing.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="49" selection-start="620" selection-end="620" vertical-scroll-proportion="0.28929386">
+                <state line="16" column="43" selection-start="615" selection-end="615" vertical-scroll-proportion="0.15261959">
                   <folding />
                 </state>
               </provider>
@@ -170,7 +170,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1303" />
-    <option name="y" value="23" />
+    <option name="y" value="24" />
     <option name="width" value="1823" />
     <option name="height" value="1109" />
   </component>
@@ -333,7 +333,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1303" y="23" width="1823" height="1109" extended-state="0" />
+    <frame x="1303" y="24" width="1823" height="1109" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -526,7 +526,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/thing.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="49" selection-start="620" selection-end="620" vertical-scroll-proportion="0.28929386">
+        <state line="16" column="43" selection-start="615" selection-end="615" vertical-scroll-proportion="0.15261959">
           <folding />
         </state>
       </provider>
