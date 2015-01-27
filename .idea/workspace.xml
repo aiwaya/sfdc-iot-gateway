@@ -21,7 +21,7 @@
     <file path="/map.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422332430652" ignored="false" />
     <file path="/app.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411016953" ignored="false" />
     <file path="/a.html" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421709265491" ignored="false" />
-    <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421990970982" ignored="false" />
+    <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422334142625" ignored="false" />
     <file path="/lightsensor.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421916625200" ignored="false" />
     <file path="/geolocation.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422237364709" ignored="false" />
     <file path="/datasender.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421923862226" ignored="false" />
@@ -128,10 +128,28 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="thing.ejs" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="thing.ejs" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/thing.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="43" selection-start="615" selection-end="615" vertical-scroll-proportion="0.15261959">
+                <state line="16" column="43" selection-start="615" selection-end="615" vertical-scroll-proportion="-3.1904762">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="android.ejs" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/android.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="42" column="6" selection-start="1119" selection-end="1119" vertical-scroll-proportion="-19.761906">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="thing.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/routes/thing.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="51" selection-start="217" selection-end="217" vertical-scroll-proportion="0.15652174">
                   <folding />
                 </state>
               </provider>
@@ -157,7 +175,6 @@
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/layoutbak.ejs" />
         <option value="$PROJECT_DIR$/views/androidcockpit.ejs" />
-        <option value="$PROJECT_DIR$/views/android.ejs" />
         <option value="$PROJECT_DIR$/public/js/geolocation.js" />
         <option value="$PROJECT_DIR$/routes/api.js" />
         <option value="$PROJECT_DIR$/views/cockpit_original.ejs" />
@@ -165,12 +182,13 @@
         <option value="$PROJECT_DIR$/views/map.ejs" />
         <option value="$PROJECT_DIR$/public/a.html" />
         <option value="$PROJECT_DIR$/views/thing.ejs" />
+        <option value="$PROJECT_DIR$/views/android.ejs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1303" />
-    <option name="y" value="24" />
+    <option name="x" value="1379" />
+    <option name="y" value="288" />
     <option name="width" value="1823" />
     <option name="height" value="1109" />
   </component>
@@ -333,7 +351,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1303" y="24" width="1823" height="1109" extended-state="0" />
+    <frame x="1379" y="288" width="1823" height="1109" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -424,14 +442,11 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/thing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="51" selection-start="217" selection-end="217" vertical-scroll-proportion="0.12834224" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="112" selection-start="630" selection-end="630" vertical-scroll-proportion="0.29347825" />
+        <state line="18" column="112" selection-start="630" selection-end="630" vertical-scroll-proportion="0.29347825">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layoutbak.ejs">
@@ -456,13 +471,6 @@
     <entry file="file://$PROJECT_DIR$/public/js/geolocation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="72" selection-start="372" selection-end="372" vertical-scroll-proportion="0.27807486" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/android.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="36" selection-start="103" selection-end="103" vertical-scroll-proportion="-0.15555556">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.js">
@@ -526,7 +534,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/thing.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="43" selection-start="615" selection-end="615" vertical-scroll-proportion="0.15261959">
+        <state line="16" column="43" selection-start="615" selection-end="615" vertical-scroll-proportion="-3.1904762">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/android.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="6" selection-start="1119" selection-end="1119" vertical-scroll-proportion="-19.761906">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/thing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="51" selection-start="217" selection-end="217" vertical-scroll-proportion="0.15652174">
           <folding />
         </state>
       </provider>
