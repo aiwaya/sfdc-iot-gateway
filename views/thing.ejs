@@ -16,90 +16,19 @@
         var pusher = new Pusher('cf6d30cb11a9b6255d0f');
         var channel = pusher.subscribe('<%= uid %>');
         channel.bind('led', function (data) {
-            $('#led').attr('src', "/images/led" + data.value + ".png");
+            alert('Receive signal with data : ' + data.value);
         });
     </script>
     <!-- Pusher -->
 
-    <link rel="stylesheet" href="../css/circular-slider.min.css" />
-    <script src="../js/circular-slider.min.js"></script>
 
-    <style>
-        html{
-            overflow: hidden;
-            min-height: 440px;
-        }
 
-        body{
-            overflow: hidden;
-            height: 100%;
-            min-height: 440px;
-            width: 100%;
-            margin: 0;
-            background-image: url('/images/background.png');
-            background-size : 100% 100%;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: left top;
-        }
-        .jcs{
-            border-color:rgb(168, 169, 172);
-        }
-        .jcs-value{
-            background-image: url('/images/blackflame.png');
-            background-size : 100% 100%;
-            background-repeat: no-repeat;
-            background-color: black;
-            background-position: left top;
-            height: 50px !important;
-            border-radius: 0;
-            line-height: 50px;
-            border:0;
 
-        }
-        .jcs-indicator{
-            background-image: url('/images/indicator.png');
-            background-size : 20px 20px;
-            background-repeat: no-repeat;
-            background-position: left top;
-            background-color: rgba(255,255,255,0);
-            border: 1px solid gray;
-            box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
-        }
-
-        #ledWrapper{
-            margin: 80px calc(50% - 80px) 0;
-        }
-        #ledWrapper img{
-            width:160px;
-            height:160px;
-        }
-        #sliderWrapper{
-            margin: 74px calc(50% - 110px) 0;
-            height: 100px;
-        }
-        #slider{
-            width:220px;
-        }
-    </style>
 
 
 </head>
 
-<body ontouchmove="event.preventDefault()">
-<div id="container">
-    <div id="ledWrapper">
-        <img id="led" src="../images/ledalert.png" />
-        <!--
-                    <img id="led" src="../images/ledoff.png" />
-                    <img id="led" src="../images/ledon.png" />
-                    切り替え: $('#led').attr('src', '../images/ledon.png')
-        -->
-    </div>
-    <div id="sliderWrapper">
-        <div id="slider"></div>
-    </div>
-</div>
+<input type="text" id="value" value="20" />
 
 </body>
 
@@ -111,7 +40,8 @@
     }
 
     function get_data() {
-        return halfCircularSlider.getValue();
+        var value = $('#value').val();
+        return value;
     }
 
     function successLocation(pos) {
@@ -138,25 +68,6 @@
         navigator.geolocation.getCurrentPosition(successLocation, errorLocation, options);
     });
 
-
-    $(function () {
-
-        halfCircularSlider = $('#slider').CircularSlider({
-            radius: 100,
-            min : 0,
-            max: 50,
-            value : 23,
-            labelSuffix: "℃",
-            shape: "Half Circle",
-            slide : function(value) {
-                if (value < 50) {
-                    //ui.next().css({'background' : 'rgba(250, 81, 81,' + ((100 - value) / 100) + ')'});
-                } else {
-                    //    ui.next().css({'background' : 'rgba(87, 250, 87,' + (value / 100) + ')'});
-                }
-            }
-        });
-    });
 
     $(function () {
         setInterval(function () {

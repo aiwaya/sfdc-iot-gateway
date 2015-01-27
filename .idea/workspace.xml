@@ -9,7 +9,7 @@
     <file path="/thing.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422334783210" ignored="false" />
     <file path="/a.dummy" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419392647896" ignored="false" />
     <file path="/api.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422270621963" ignored="false" />
-    <file path="/thing.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422334506821" ignored="false" />
+    <file path="/thing.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422335806934" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-node.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1418976210673" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-map-generator.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1418976210673" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-node.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1418976210673" ignored="false" />
@@ -56,10 +56,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="android.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="thing.ejs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/thing.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.3129103">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="android.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/android.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="20" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.10319149">
+            <state line="42" column="20" selection-start="1133" selection-end="1133" vertical-scroll-proportion="-4.6190476">
               <folding />
             </state>
           </provider>
@@ -88,14 +97,14 @@
         <option value="$PROJECT_DIR$/views/cockpit.ejs" />
         <option value="$PROJECT_DIR$/views/map.ejs" />
         <option value="$PROJECT_DIR$/public/a.html" />
-        <option value="$PROJECT_DIR$/views/thing.ejs" />
         <option value="$PROJECT_DIR$/routes/thing.js" />
         <option value="$PROJECT_DIR$/views/android.ejs" />
+        <option value="$PROJECT_DIR$/views/thing.ejs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1362" />
+    <option name="x" value="1353" />
     <option name="y" value="56" />
     <option name="width" value="1823" />
     <option name="height" value="1109" />
@@ -259,7 +268,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1362" y="56" width="1823" height="1109" extended-state="0" />
+    <frame x="1353" y="56" width="1823" height="1109" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -433,9 +442,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/thing.ejs">
+    <entry file="file://$PROJECT_DIR$/views/android.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="0" selection-start="3918" selection-end="3918" vertical-scroll-proportion="0.34893617">
+        <state line="42" column="20" selection-start="1133" selection-end="1133" vertical-scroll-proportion="-4.6190476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/temperature.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -447,9 +463,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/android.ejs">
+    <entry file="file://$PROJECT_DIR$/views/thing.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="20" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.10319149">
+        <state line="44" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.3129103">
           <folding />
         </state>
       </provider>
