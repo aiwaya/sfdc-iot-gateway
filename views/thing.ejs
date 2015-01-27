@@ -13,9 +13,9 @@
     <script src="https://js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         var pusher = new Pusher('cf6d30cb11a9b6255d0f');
-        var channel = pusher.subscribe('a');
+        var channel = pusher.subscribe('<% uid %>');
         channel.bind('led', function (data) {
-            $('#led').attr('src', "../images/led" + data.value + ".png");
+            $('#led').attr('src', "/images/led" + data.value + ".png");
         });
     </script>
     <!-- Pusher -->
