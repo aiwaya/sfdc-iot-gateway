@@ -135,7 +135,9 @@ router.get('/reset', function (req, res) {
             }
         });
     });
-    res.status(200).end();
+//res.status(200).end();
+    res.status(200).send('Reset Success!!');
+
 });
 
 
