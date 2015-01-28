@@ -14,7 +14,6 @@
         channel.bind('battery', function (data) {
             if(data.mode == 'measure') {
                 var value = data.value;
-                alert(value);
                 showBattery(value,100);
             }
 
