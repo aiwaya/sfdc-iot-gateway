@@ -94,11 +94,13 @@
 
     $(function () {
 
-        if (!("vibrate" in navigator)) {
+        if ("vibrate" in navigator) {
+        } else {
             alert("Your browser does not support vibrate. Only mobile Firefox on Andorid supports vibrate.");
         }
 
-        if (!navigator.geolocation) {
+        if (navigator.geolocation) {
+        } else {
             alert("Your browser does not support Geolocation so please change one!");
         }
 

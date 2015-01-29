@@ -21,7 +21,7 @@
     <file path="/map.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422348446294" ignored="false" />
     <file path="/app.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411016953" ignored="false" />
     <file path="/a.html" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421709265491" ignored="false" />
-    <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422493410097" ignored="false" />
+    <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422493888372" ignored="false" />
     <file path="/lightsensor.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421916625200" ignored="false" />
     <file path="/geolocation.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422237364709" ignored="false" />
     <file path="/datasender.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421923862226" ignored="false" />
@@ -47,7 +47,17 @@
     <favorites_list name="SalesforceIotGateway" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="android.ejs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/android.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="16" selection-start="2859" selection-end="2859" vertical-scroll-proportion="0.78107184">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -228,12 +238,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1310" y="49" width="1732" height="1046" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19407895" sideWeight="0.4990177" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1357519" sideWeight="0.65730995" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1357519" sideWeight="0.65730995" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23026316" sideWeight="0.13752456" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34269005" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -407,13 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/android.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="37" selection-start="1732" selection-end="1732" vertical-scroll-proportion="0.24743444">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/temperature.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="161" column="9" selection-start="4857" selection-end="4857" vertical-scroll-proportion="0.8905359">
@@ -424,6 +427,13 @@
     <entry file="file://$PROJECT_DIR$/views/thing.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="3" selection-start="2139" selection-end="2272" vertical-scroll-proportion="0.79475486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/android.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="16" selection-start="2859" selection-end="2859" vertical-scroll-proportion="0.78107184">
           <folding />
         </state>
       </provider>
