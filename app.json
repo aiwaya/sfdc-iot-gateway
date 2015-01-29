@@ -9,9 +9,9 @@
     "YOUR_EMAIL": "",
     "YOUR_LONGITUDE": "-122.4194",
     "YOUR_LATITUDE": "37.7749",
-    "PUSHER_APPID": "Should_change_later",
-    "PUSHER_KEY": "Should_change_later",
-    "PUSHER_SECRET": "Should_change_later"
+    "PUSHER_APPID": "Should_Change_Later",
+    "PUSHER_KEY": "Should_Change_Later",
+    "PUSHER_SECRET": "Should_Change_Later"
   },
   "addons": [
     "pusher:sandbox",
