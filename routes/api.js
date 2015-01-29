@@ -183,7 +183,7 @@ router.get('/locations', function (req, res) {
             params = [swlng, nelng, nelat, swlat];
             query += '(longitude > $1 AND longitude < $2) AND (latitude <= $3 AND latitude >= $4)';
         } else {
-            query += 'longitude <= $1 AND latitude >= $2) AND (latitude <= $3 AND latitude >= $4)';
+            query += '(longitude <= $1 AND latitude >= $2) AND (latitude <= $3 AND latitude >= $4)';
             params = [swlng, nelng, nelat, swlat];
         }
 
