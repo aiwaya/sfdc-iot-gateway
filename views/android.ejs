@@ -93,8 +93,18 @@
 
 
     $(function () {
+
+        if (!("vibrate" in navigator)) {
+            alert("Your browser does not support vibrate. Only mobile Firefox on Andorid supports vibrate.");
+        }
+
+        if (!navigator.geolocation) {
+            alert("Your browser does not support Geolocation so please change one!");
+        }
+
         setTimeout(scrollTo, 100, 0, 1);
         window.addEventListener('devicelight', light);
+
         navigator.geolocation.getCurrentPosition(successGeolocation, errorGeolocation, {timeout: 1000});
     });
 

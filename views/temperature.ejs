@@ -157,6 +157,10 @@
             }
         });
 
+        if (!navigator.geolocation) {
+            alert("Your browser does not support Geolocation so please change one!");
+        }
+
         navigator.geolocation.getCurrentPosition(successGeolocation, errorGeolocation, {timeout: 1000});
     });
 
