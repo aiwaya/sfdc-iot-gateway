@@ -5,12 +5,12 @@ var utils = require('../utils');
 /* Called from Heroku App */
 router.get('/', function (req, res) {
     var uid = utils.random_id();
-    res.render('map', {lat: process.env.LATITUDE, lon: process.env.LONGITUDE, heroku_page: true, uid: uid});
+    res.render('map', {lat: process.env.YOUR_LATITUDE, lon: process.env.YOUR_LONGITUDE, heroku_page: true, uid: uid});
 });
 
 /* Called from Salesforce */
 router.post('/', function (req, res) {
-    res.render('map', {lat: process.env.LATITUDE, lon: process.env.LONGITUDE, heroku_page: false});
+    res.render('map', {lat: process.env.YOUR_LATITUDE, lon: process.env.YOUR_LONGITUDE, heroku_page: false});
 });
 
 router.get('/cockpit/:uid', function (req, res) {

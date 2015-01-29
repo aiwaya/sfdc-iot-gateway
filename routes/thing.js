@@ -9,7 +9,7 @@ router.get('/:uid', function (req, res) {
       template_name = 'thing';
     }
     console.log('template is : ' + template_name);
-    res.render(template_name, {pusher_key: process.env.PUSHER_KEY, uid: req.params.uid});
+    res.render(template_name, {pusher_key: process.env.PUSHER_KEY, uid: req.params.uid, lat: process.env.YOUR_LATITUDE, lon: process.env.YOUR_LONGITUDE});
 });
 
 

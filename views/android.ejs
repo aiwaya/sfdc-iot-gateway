@@ -23,16 +23,12 @@
                     success: function (data) {
                     }
                 });
-
             }
-
         });
 
         channel.bind('vibrate', function (data) {
-            navigator.vibrate(3000);
+            navigator.vibrate(4000);
         });
-
-
     </script>
     <!-- Pusher -->
 
@@ -51,12 +47,10 @@
 </body>
 
 <script src="/js/modernizr-2.6.2.min.js"></script>
-<!--<script src="/js/jquery.min.js"></script>-->
 
 <script>
 
     var value = 0;
-
     function successGeolocation(pos) {
         var crd = pos.coords;
         lat = crd.latitude;
@@ -65,10 +59,8 @@
     }
 
     function errorGeolocation(err) {
-        alert('Can not take geolocation value so use Tokyo location instead (' + err.code + '): ' + err.message);
-        lat = 35.6798053;
-        lon = 139.7646006;
-        sendDataToHeroku(lat, lon);
+        alert('Can not take geolocation value so use default which you set at heroku console. (' + err.code + '): ' + err.message);
+        sendDataToHeroku(<%= lat %>, <%= lon %>);
     }
 
     function light(event) {

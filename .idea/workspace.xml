@@ -6,28 +6,29 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/test.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1418949369841" ignored="false" />
     <file path="/utils.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422068038940" ignored="false" />
-    <file path="/thing.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422334783210" ignored="false" />
+    <file path="/thing.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422414580287" ignored="false" />
     <file path="/a.dummy" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419392647896" ignored="false" />
     <file path="/api.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422348336925" ignored="false" />
-    <file path="/thing.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422346000749" ignored="false" />
+    <file path="/thing.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422492183707" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-node.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1418976210673" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-map-generator.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1418976210673" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-node.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1418976210673" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-map-generator.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1418976210673" ignored="false" />
     <file path="/.env" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421980355342" ignored="false" />
-    <file path="/app.json" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411214319" ignored="false" />
-    <file path="/index.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422347700271" ignored="false" />
+    <file path="/app.json" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422413436403" ignored="false" />
+    <file path="/index.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422414536289" ignored="false" />
     <file path="/cockpit.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422349831850" ignored="false" />
     <file path="/map.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422348446294" ignored="false" />
     <file path="/app.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1419411016953" ignored="false" />
     <file path="/a.html" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421709265491" ignored="false" />
-    <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422335301393" ignored="false" />
+    <file path="/android.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422491088711" ignored="false" />
     <file path="/lightsensor.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421916625200" ignored="false" />
     <file path="/geolocation.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422237364709" ignored="false" />
     <file path="/datasender.js" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1421923862226" ignored="false" />
     <file path="/androidcockpit.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422403294898" ignored="false" />
     <file path="/package.json" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422345398605" ignored="false" />
     <file path="/cockpit_original.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422329965950" ignored="false" />
+    <file path="/temperature.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422491166007" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +48,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <file leaf-file-name="thing.ejs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/thing.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/api.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="41" selection-start="4764" selection-end="4764" vertical-scroll-proportion="0.8342246">
+            <state line="75" column="98" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.8494869">
               <folding />
             </state>
           </provider>
@@ -75,30 +67,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/utils.js" />
         <option value="$PROJECT_DIR$/views/layoutbak.ejs" />
         <option value="$PROJECT_DIR$/public/js/geolocation.js" />
         <option value="$PROJECT_DIR$/views/cockpit_original.ejs" />
         <option value="$PROJECT_DIR$/public/a.html" />
-        <option value="$PROJECT_DIR$/routes/thing.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/views/thing.ejs" />
-        <option value="$PROJECT_DIR$/views/temperature.ejs" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/map.ejs" />
         <option value="$PROJECT_DIR$/views/cockpit.ejs" />
-        <option value="$PROJECT_DIR$/views/android.ejs" />
         <option value="$PROJECT_DIR$/views/androidcockpit.ejs" />
         <option value="$PROJECT_DIR$/routes/api.js" />
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/routes/thing.js" />
+        <option value="$PROJECT_DIR$/views/android.ejs" />
+        <option value="$PROJECT_DIR$/views/temperature.ejs" />
+        <option value="$PROJECT_DIR$/views/thing.ejs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="63" />
-    <option name="y" value="23" />
-    <option name="width" value="1823" />
-    <option name="height" value="709" />
+    <option name="x" value="1310" />
+    <option name="y" value="49" />
+    <option name="width" value="1732" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -126,7 +118,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -173,22 +164,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SalesforceIotGateway" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SalesforceIotGateway" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,8 +179,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/css" />
@@ -259,13 +237,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="23" width="1823" height="709" extended-state="0" />
+    <frame x="1310" y="49" width="1732" height="1046" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19407895" sideWeight="0.4990177" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16444445" sideWeight="0.65730995" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1357519" sideWeight="0.65730995" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23026316" sideWeight="0.13752456" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34269005" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -350,105 +328,112 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/geolocation.js">
+    <entry file="file://$PROJECT_DIR$/views/cockpit.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="72" selection-start="372" selection-end="372" vertical-scroll-proportion="0.27807486" />
+        <state line="71" column="5" selection-start="2552" selection-end="2552" vertical-scroll-proportion="-38.285713" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="15" selection-start="209" selection-end="209" vertical-scroll-proportion="0.025806451" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/circular-slider.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/circular-slider.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="10" column="15" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="23" selection-start="441" selection-end="441" vertical-scroll-proportion="-10.857142">
+        <state line="19" column="23" selection-start="441" selection-end="441" vertical-scroll-proportion="0.42222223">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/thing.js">
+    <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/moment.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/thing.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="3" selection-start="367" selection-end="413" vertical-scroll-proportion="-6.857143" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/temperature.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="51" selection-start="4781" selection-end="4781" vertical-scroll-proportion="0.51111114" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="10" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.5294118">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/map.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="247" column="62" selection-start="9170" selection-end="9170" vertical-scroll-proportion="0.7777778">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/cockpit.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="5" selection-start="2552" selection-end="2552" vertical-scroll-proportion="-38.285713">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/android.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="31" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.6888889">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/androidcockpit.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.38709676">
+        <state line="9" column="19" selection-start="254" selection-end="268" vertical-scroll-proportion="0.2">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+        <state line="12" column="23" selection-start="414" selection-end="477" vertical-scroll-proportion="0.25668448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="1545" selection-end="1545" vertical-scroll-proportion="1.1764706">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="41" selection-start="4764" selection-end="4764" vertical-scroll-proportion="0.8342246">
+        <state line="138" column="41" selection-start="4764" selection-end="4764" vertical-scroll-proportion="0.95620435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/thing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="151" selection-start="506" selection-end="506" vertical-scroll-proportion="0.24087591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/androidcockpit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="-1.8462998">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/map.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="247" column="62" selection-start="9170" selection-end="9170" vertical-scroll-proportion="3.3244553">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/thing_bak.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/temperature_bak.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="53" selection-start="615" selection-end="615" vertical-scroll-proportion="0.49394673">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/temperature.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="368" selection-end="368" vertical-scroll-proportion="66.28571">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/android.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="4" selection-start="1320" selection-end="2837" vertical-scroll-proportion="0.24743444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/thing.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="98" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.8494869">
           <folding />
         </state>
       </provider>

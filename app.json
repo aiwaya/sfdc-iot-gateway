@@ -1,14 +1,17 @@
 {
-  "name": "SFDC IoT Gateway",
-  "description": " Node.js app using Express 4",
+  "name": "SFDC IoT Quick Demo",
+  "description": "Salesforce IoT Quick Demo with Node.js app using Express 4",
   "repository": "https://github.com/aiwaya/a",
   "scripts": {
     "postdeploy": "node schema.js"
   },
   "env": {
     "YOUR_EMAIL": "",
-    "LONGITUDE": "139.739",
-    "LATITUDE": "35.665595"
+    "YOUR_LONGITUDE": "-122.4194",
+    "YOUR_LATITUDE": "37.7749",
+    "PUSHER_APPID": "Should_change_later",
+    "PUSHER_KEY": "Should_change_later",
+    "PUSHER_SECRET": "Should_change_later"
   },
   "addons": [
     "pusher:sandbox",

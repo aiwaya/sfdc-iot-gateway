@@ -21,6 +21,12 @@
         });
     </script>
     <!-- Pusher -->
+
+
+
+
+
+
 </head>
 
 <input type="text" id="value" value="20" />
@@ -28,34 +34,52 @@
 </body>
 
 <script>
+    var lat, lon;
 
+    function get_data() {
+        var value = $('#value').val();
+        return value;
+    }
 
-    function successGeolocation(pos) {
+    function successLocation(pos) {
         var crd = pos.coords;
         lat = crd.latitude;
         lon = crd.longitude;
-        sendDataToHeroku(lat, lon);
-    }
+        console.log('Your current position is:');
+        console.log('Latitude : ' + crd.latitude);
+        console.log('Longitude: ' + crd.longitude);
+        console.log('More or less ' + crd.accuracy + ' meters.');
+    };
 
-    function errorGeolocation(err) {
-        alert('Can not take geolocation value so use default which you set at heroku console. (' + err.code + '): ' + err.message);
-        sendDataToHeroku(<%= lat %>, <%= lon %>);
-    }
+    function errorLocation(err) {
+        alert('Can not receive Geolocation(' + err.code + '): ' + err.message);
+    };
 
-    function sendDataToHeroku(lat, lon) {
+
+    $(function() {
+        var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        };
+        navigator.geolocation.getCurrentPosition(successLocation, errorLocation, options);
+    });
+
+
+    $(function () {
         setInterval(function () {
             $.ajax({
                 type: "POST",
                 url: "/api/series",
                 data: {
-                    "value": $('#value').val(),
+                    "value": get_data(),
                     "uid": "<%= uid %>",
                     "created_at": moment().format(),
                     "latitude": lat,
                     "longitude": lon
                 },
                 success: function(j_data){
-                    console.log("GET: /api/series success " +value);
+                    console.log("GET: /api/series success " +get_data());
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
                     console.log("Failed : GET /api/series  " + textStatus);
@@ -63,19 +87,7 @@
                 }
             });
 
-        }, 5000);
-    }
-
-
-    $(function () {
-        if (!navigator.geolocation) {
-            alert("Your browser does not support Geolocation so please change one!");
-        }
-
-        setTimeout(scrollTo, 100, 0, 1);
-        navigator.geolocation.getCurrentPosition(successGeolocation, errorGeolocation, {timeout: 3000});
+        }, 3000);
     });
-
-
 </script>
 </html>
