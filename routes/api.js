@@ -167,7 +167,34 @@ router.get('/pusher', function (req, res) {
 
 });
 
+router.get('/locations', function (req, res) {
+    console.log('get:/api/locations');
 
+    var s = req.query.swLat;
+    var w = req.query.swLng;
+    var n = req.query.neLat;
+    var e = req.query.neLng;
+
+    pg.connect(db_config, function (err, client, done) {
+        var query = 'SELECT * FROM locations';
+        var params = null;
+
+        client.query(query, [], function (err, result) {
+            done();
+            if (err) {
+                console.log('Record Error: ' + err);
+                console.log('query : ' + query);
+                console.log('params : ' + params);
+                res.status(500).end();
+            } else {
+                res.json(result.rows);
+            }
+        });
+    });
+});
+
+
+/*
 router.get('/locations', function (req, res) {
     console.log('get:/api/locations');
 
@@ -202,5 +229,6 @@ router.get('/locations', function (req, res) {
         });
     });
 });
+           */
 
 module.exports = router;
