@@ -28,7 +28,7 @@
     <file path="/androidcockpit.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422403294898" ignored="false" />
     <file path="/package.json" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422345398605" ignored="false" />
     <file path="/cockpit_original.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422329965950" ignored="false" />
-    <file path="/temperature.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422491166007" ignored="false" />
+    <file path="/temperature.ejs" changelist="c35cbb6e-10d0-4cda-a54c-6faa311d07e0" time="1422501929100" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,43 @@
     <favorites_list name="SalesforceIotGateway" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <splitter split-orientation="vertical" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="cockpit.ejs" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/views/cockpit.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="38" column="14" selection-start="1584" selection-end="1589" vertical-scroll-proportion="0.03">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="temperature.ejs" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/views/temperature.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="50" selection-start="612" selection-end="612" vertical-scroll-proportion="0.17690417">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="temperature_bak.ejs" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/temperature_bak.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="53" selection-start="615" selection-end="615" vertical-scroll-proportion="-9.714286">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -69,10 +105,10 @@
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/thing.js" />
         <option value="$PROJECT_DIR$/views/android.ejs" />
-        <option value="$PROJECT_DIR$/views/temperature.ejs" />
         <option value="$PROJECT_DIR$/views/thing.ejs" />
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/views/map.ejs" />
+        <option value="$PROJECT_DIR$/views/temperature.ejs" />
       </list>
     </option>
   </component>
@@ -228,12 +264,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1341" y="102" width="1732" height="1046" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19407895" sideWeight="0.4990177" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1357519" sideWeight="0.65730995" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1357519" sideWeight="0.65730995" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23026316" sideWeight="0.13752456" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34269005" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -374,13 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/temperature_bak.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="53" selection-start="615" selection-end="615" vertical-scroll-proportion="0.49394673">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="37" selection-start="437" selection-end="437" vertical-scroll-proportion="-7.428571">
@@ -395,23 +424,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/temperature.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="39" selection-start="3867" selection-end="3871" vertical-scroll-proportion="0.45240894">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/map.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="21" selection-start="1336" selection-end="1340" vertical-scroll-proportion="0.40893066">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/cockpit.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="14" selection-start="1584" selection-end="1589" vertical-scroll-proportion="0.54415274">
           <folding />
         </state>
       </provider>
@@ -426,6 +441,27 @@
     <entry file="file://$PROJECT_DIR$/views/androidcockpit.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="29" selection-start="768" selection-end="812" vertical-scroll-proportion="0.40893066">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cockpit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="14" selection-start="1584" selection-end="1589" vertical-scroll-proportion="0.03">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/temperature_bak.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="53" selection-start="615" selection-end="615" vertical-scroll-proportion="-9.714286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/temperature.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="50" selection-start="612" selection-end="612" vertical-scroll-proportion="0.17690417">
           <folding />
         </state>
       </provider>
