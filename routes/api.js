@@ -187,10 +187,14 @@ router.get('/locations', function (req, res) {
             params = [swlng, nelng, nelat, swlat];
         }
 
+
+
         client.query(query, params, function (err, result) {
             done();
             if (err) {
                 console.log('Record Error: ' + err);
+                console.log('query : ' + query);
+                console.log('params : ' + params);
                 res.status(500).end();
             } else {
                 res.json(result.rows);

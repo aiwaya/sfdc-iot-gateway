@@ -17,6 +17,7 @@
     "pusher:sandbox",
     "sendgrid:starter",
     "pgstudio",
+    "papertrail:choklad",
     "heroku-postgresql:hobby-dev"
   ]
 }
