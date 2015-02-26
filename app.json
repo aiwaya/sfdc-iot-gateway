@@ -11,11 +11,7 @@
     "YOUR_LATITUDE": "37.7749",
     "PUSHER_APPID": "Should_Change_Later",
     "PUSHER_KEY": "Should_Change_Later",
-    "PUSHER_SECRET": "Should_Change_Later",
-    "WEB_CONCURRENCY": {
-      "description": "The number of processes to run.",
-      "value": "5"
-    }
+    "PUSHER_SECRET": "Should_Change_Later"
   },
   "addons": [
     "pusher:sandbox",
