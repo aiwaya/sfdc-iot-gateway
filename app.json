@@ -1,7 +1,7 @@
 {
   "name": "SFDC IoT Quick Demo",
   "description": "Salesforce IoT Quick Demo with Node.js app using Express 4",
-  "repository": "https://github.com/aiwaya/a",
+  "repository": "https://github.com/aiwaya/sfdc-iot-gateway",
   "scripts": {
     "postdeploy": "node schema.js"
   },
