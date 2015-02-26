@@ -1,5 +1,5 @@
 var express = require('express');
-var pg = require('pg');s
+var pg = require('pg');
 var router = express.Router();
 var db_config = process.env.DATABASE_URL;
 var Pusher = require('pusher');
